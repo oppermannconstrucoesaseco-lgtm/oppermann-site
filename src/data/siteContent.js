@@ -1,0 +1,94 @@
+import servicoDrywall from "../assets/servico-drywall.jpg";
+import servicoPintura from "../assets/servico-pintura.jpg";
+import servicoRevestimentos from "../assets/servico-revestimentos.jpg";
+import servicoSteelFrame from "../assets/servico-steel-frame.jpg";
+
+export const company = {
+  legalName: "OPPERMANN CONSTRUCAO A SECO LTDA",
+  brandName: "OPPERMANN",
+  cnpj: "53.591.754/0001-20",
+  baseCity: "Itapema - SC",
+  address: "Rua 305, 240, Meia Praia, Itapema/SC, CEP 88.220-000",
+  shortAddress: "Rua 305, 240, Meia Praia, Itapema/SC",
+  email: "oppermannconstrucoesa seco@gmail.com",
+  contactName: "Michel",
+  phoneDisplay: "(41) 97402-0220",
+  phoneNumber: "5541974020220",
+  regions: "Itapema, Balneário Camboriú, Porto Belo, Bombinhas, Itajaí e Navegantes"
+};
+
+// Edite este arquivo para trocar textos, contato, regiões atendidas e imagens do site.
+export const whatsappMessage =
+  "Olá, Michel. Vim pelo site da OPPERMANN e gostaria de solicitar um orçamento.";
+
+export const images = {
+  hero:
+    "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=2200&q=85",
+  about: "/images/quem-somos-steel-frame.jpeg",
+  gallery: [
+    "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=900&q=80",
+    "https://images.unsplash.com/photo-1517581177682-a085bb7ffb38?auto=format&fit=crop&w=900&q=80",
+    "https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=900&q=80"
+  ]
+};
+
+export const services = [
+  {
+    title: "Steel Frame",
+    description:
+      "Sistema construtivo leve, preciso e eficiente para obras modernas, rápidas e com excelente desempenho."
+  },
+  {
+    title: "Drywall",
+    description:
+      "Soluções em drywall para ambientes internos com acabamento refinado, agilidade e obra mais limpa."
+  },
+  {
+    title: "Forros",
+    description:
+      "Forros em drywall com alinhamento técnico, integração de iluminação e acabamento de alto padrão."
+  },
+  {
+    title: "Paredes",
+    description:
+      "Paredes em drywall para divisão de ambientes com praticidade, precisão e resultado elegante."
+  },
+  {
+    title: "Revestimentos",
+    description:
+      "Aplicação de revestimentos com atenção aos detalhes, paginação organizada e acabamento profissional."
+  },
+  {
+    title: "Pintura interna e externa",
+    description:
+      "Pintura para áreas internas e externas com preparo correto, proteção das superfícies e visual superior."
+  }
+];
+
+export const differentials = [
+  "Agilidade na execução",
+  "Obra mais limpa e organizada",
+  "Soluções modernas e eficientes",
+  "Alto padrão de acabamento",
+  "Atendimento profissional",
+  "Compromisso com qualidade",
+  "Execução técnica especializada"
+];
+
+export const galleryItems = [
+  {
+    title: "Estrutura em steel frame",
+    label: "Steel Frame",
+    image: servicoSteelFrame
+  },
+  {
+    title: "Drywall técnico",
+    label: "Drywall",
+    image: servicoDrywall
+  },
+  {
+    title: "Pintura e acabamento premium",
+    label: "Pintura Premium",
+    image: servicoRevestimentos
+  }
+];
