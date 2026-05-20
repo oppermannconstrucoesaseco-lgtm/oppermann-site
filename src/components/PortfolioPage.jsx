@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import { getWhatsAppUrl } from "../utils/links.js";
+import "../styles/portfolio-complete.css";
 import steelFrame01 from "../assets/portfolio/portfolio-131.jpg";
 import steelFrame02 from "../assets/portfolio/portfolio-189.jpg";
 import steelFrame03 from "../assets/portfolio/portfolio-193.jpg";
