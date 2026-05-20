@@ -10,7 +10,7 @@ export const company = {
   baseCity: "Itapema - SC",
   address: "Rua 305, 240, Meia Praia, Itapema/SC, CEP 88.220-000",
   shortAddress: "Rua 305, 240, Meia Praia, Itapema/SC",
-  email: "comercial@oppermann.com.br",
+  email: "comercial@oppermannsteel.com.br",
   contactName: "Michel",
   phoneDisplay: "(41) 97402-0220",
   phoneNumber: "5541974020220",
