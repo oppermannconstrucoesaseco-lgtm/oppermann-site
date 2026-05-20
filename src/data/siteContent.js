@@ -10,14 +10,13 @@ export const company = {
   baseCity: "Itapema - SC",
   address: "Rua 305, 240, Meia Praia, Itapema/SC, CEP 88.220-000",
   shortAddress: "Rua 305, 240, Meia Praia, Itapema/SC",
-  email: "oppermannconstrucoesa seco@gmail.com",
+  email: "comercial@oppermannsteel.com.br",
   contactName: "Michel",
   phoneDisplay: "(41) 97402-0220",
   phoneNumber: "5541974020220",
   regions: "Itapema, Balneário Camboriú, Porto Belo, Bombinhas, Itajaí e Navegantes"
 };
 
-// Edite este arquivo para trocar textos, contato, regiões atendidas e imagens do site.
 export const whatsappMessage =
   "Olá, Michel. Vim pelo site da OPPERMANN e gostaria de solicitar um orçamento.";
 
