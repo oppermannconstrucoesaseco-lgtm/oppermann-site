@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
+import { getWhatsAppUrl } from "../utils/links.js";
 import steelFrame01 from "../assets/portfolio/portfolio-131.jpg";
 import steelFrame02 from "../assets/portfolio/portfolio-189.jpg";
 import steelFrame03 from "../assets/portfolio/portfolio-193.jpg";
@@ -19,9 +20,6 @@ import pintura05 from "../assets/portfolio/portfolio-134.jpg";
 import obra01 from "../assets/portfolio/portfolio-129.jpg";
 import obra02 from "../assets/portfolio/portfolio-132.jpg";
 import obra03 from "../assets/portfolio/portfolio-154.jpg";
-
-const WHATSAPP_PORTFOLIO_URL =
-  "https://wa.me/5541992522219?text=Ol%C3%A1%2C%20quero%20solicitar%20um%20or%C3%A7amento%20com%20a%20Oppermann.";
 
 const categories = ["Todos", "Steel Frame", "Drywall", "Forros", "Pintura"];
 
@@ -171,8 +169,7 @@ export function PortfolioPage() {
             <span>Galeria</span>
             <h2 id="portfolio-gallery-title">Projetos executados com precisão, organização e acabamento profissional.</h2>
             <p>
-              Imagens extraídas do portfólio Oppermann Construção a Seco & W Engenharia,
-              organizadas por tipo de serviço.
+              Imagens extraídas do portfólio Oppermann Construção a Seco, organizadas por tipo de serviço.
             </p>
           </div>
 
@@ -222,7 +219,7 @@ export function PortfolioPage() {
       <section className="section portfolio-final-cta">
         <div className="container portfolio-final-panel">
           <h2>Pronto para tirar seu projeto do papel com qualidade e alto padrão?</h2>
-          <a className="btn btn-primary" href={WHATSAPP_PORTFOLIO_URL} target="_blank" rel="noreferrer">
+          <a className="btn btn-primary" href={getWhatsAppUrl("Olá, quero solicitar um orçamento com a Oppermann.")} target="_blank" rel="noreferrer">
             Solicitar orçamento
           </a>
         </div>
