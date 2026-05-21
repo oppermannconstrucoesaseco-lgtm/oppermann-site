@@ -20,6 +20,9 @@ export function Hero() {
           <a className="btn btn-primary" href="#contato">
             Solicitar orçamento
           </a>
+          <a className="btn btn-secondary" href="/portfolio#portfolio-completo">
+            Ver portfólio completo
+          </a>
           <a className="btn btn-secondary" href={getWhatsAppUrl()} target="_blank" rel="noreferrer">
             Falar no WhatsApp
           </a>
