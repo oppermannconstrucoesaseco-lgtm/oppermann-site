@@ -34,7 +34,6 @@
 }
 
 .original-portfolio-page {
-  position: relative;
   margin: 0;
   overflow: hidden;
   border: 1px solid rgba(228, 195, 122, 0.26);
@@ -48,46 +47,16 @@
     inset 0 1px 0 rgba(255, 255, 255, 0.08);
 }
 
-.original-portfolio-page > span {
-  position: absolute;
-  left: 16px;
-  top: 16px;
-  z-index: 2;
-  display: grid;
-  place-items: center;
-  width: 42px;
-  height: 42px;
-  border: 1px solid rgba(228, 195, 122, 0.58);
-  border-radius: var(--radius);
-  background: rgba(8, 8, 10, 0.72);
-  color: var(--color-gold-bright);
-  font-size: 0.82rem;
-  font-weight: 950;
-  backdrop-filter: blur(12px);
+.original-portfolio-page > span,
+.original-portfolio-page figcaption {
+  display: none;
 }
 
 .original-portfolio-page img {
+  display: block;
   width: 100%;
   height: auto;
   background: #050506;
-}
-
-.original-portfolio-page figcaption {
-  position: absolute;
-  left: 16px;
-  right: 16px;
-  bottom: 16px;
-  z-index: 2;
-  width: fit-content;
-  max-width: calc(100% - 32px);
-  padding: 10px 14px;
-  border: 1px solid rgba(228, 195, 122, 0.38);
-  border-radius: var(--radius);
-  background: rgba(8, 8, 10, 0.76);
-  color: rgba(245, 242, 234, 0.92);
-  font-size: 0.88rem;
-  font-weight: 900;
-  backdrop-filter: blur(12px);
 }
 
 .complete-portfolio-grid {
@@ -256,23 +225,6 @@
   .complete-portfolio-media,
   .complete-portfolio-media img {
     min-height: 310px;
-  }
-
-  .original-portfolio-page > span {
-    left: 10px;
-    top: 10px;
-    width: 34px;
-    height: 34px;
-    font-size: 0.72rem;
-  }
-
-  .original-portfolio-page figcaption {
-    left: 10px;
-    right: 10px;
-    bottom: 10px;
-    max-width: calc(100% - 20px);
-    padding: 8px 10px;
-    font-size: 0.76rem;
   }
 
   .portfolio-company-list {
