@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import { getWhatsAppUrl } from "../utils/links.js";
+import "../styles/portfolio-complete.css";
 import steelFrame01 from "../assets/portfolio/portfolio-131.jpg";
 import steelFrame02 from "../assets/portfolio/portfolio-189.jpg";
 import steelFrame03 from "../assets/portfolio/portfolio-193.jpg";
@@ -126,6 +127,115 @@ const portfolioItems = [
   }
 ];
 
+const completePortfolioSections = [
+  {
+    eyebrow: "Sobre nós",
+    title: "Construção a seco com engenharia, planejamento e alto padrão.",
+    text:
+      "A OPPERMANN CONSTRUÇÃO A SECO atua com soluções modernas em drywall, steel frame e sistemas construtivos de alta performance, unindo planejamento técnico, execução profissional e compromisso com prazo, segurança e acabamento.",
+    image: steelFrame05,
+    bullets: [
+      "Obras residenciais, comerciais e corporativas",
+      "Processos organizados e acompanhamento técnico",
+      "Execução limpa, ágil e com padrão elevado de acabamento"
+    ]
+  },
+  {
+    eyebrow: "À frente da Oppermann",
+    title: "Michel Oppermann lidera diretamente a execução e o acompanhamento técnico.",
+    text:
+      "Cada projeto é conduzido com atenção aos detalhes, eficiência operacional e foco na qualidade final. Mais do que entregar obras, a Oppermann busca construir confiança, resultado e excelência em cada etapa.",
+    image: obra03,
+    bullets: [
+      "Organização de obra e responsabilidade técnica",
+      "Acompanhamento próximo da execução",
+      "Soluções modernas em drywall, steel frame e construção a seco"
+    ]
+  },
+  {
+    eyebrow: "Diferenciais",
+    title: "Método, cuidado e previsibilidade do início ao fim.",
+    text:
+      "Nosso padrão de execução valoriza processos bem definidos, comunicação clara, alinhamento técnico e atenção aos detalhes em todas as etapas da obra.",
+    image: drywall03,
+    bullets: [
+      "Execução limpa, organizada e profissional",
+      "Engenharia aplicada e acompanhamento técnico",
+      "Drywall e steel frame com montagem profissional",
+      "Acabamentos que valorizam o resultado final",
+      "Compromisso real com prazo e qualidade"
+    ]
+  },
+  {
+    eyebrow: "Drywall",
+    title: "Precisão, rapidez e acabamento superior.",
+    text:
+      "O drywall permite soluções rápidas, limpas e com acabamento impecável. Executamos cada etapa com atenção ao prumo, esquadro, reforços e fechamento uniforme para receber acabamento premium.",
+    image: drywall01,
+    bullets: [
+      "Montagem técnica da estrutura",
+      "Chapeamento alinhado e resistente",
+      "Fechamentos limpos e uniformes",
+      "Preparação correta para acabamento final"
+    ]
+  },
+  {
+    eyebrow: "Steel Frame",
+    title: "Estrutura moderna de alta performance.",
+    text:
+      "O steel frame é um sistema construtivo leve, resistente e extremamente preciso. Nossa montagem segue critérios rigorosos de alinhamento, fixação e reforços para garantir uma estrutura segura, durável e pronta para receber fechamento.",
+    image: steelFrame01,
+    bullets: [
+      "Estruturas montadas com precisão milimétrica",
+      "Perfis galvanizados de alta resistência",
+      "Instalações integradas ao sistema construtivo",
+      "Obra mais rápida, segura e organizada"
+    ]
+  },
+  {
+    eyebrow: "Forros em drywall",
+    title: "Precisão, nivelamento e sofisticação.",
+    text:
+      "Os forros em drywall criam ambientes modernos, com linhas limpas e acabamento impecável. Nossa execução segue padrões rigorosos de nivelamento, fixação e preparação para pintura premium.",
+    image: forro01,
+    bullets: [
+      "Nivelamento perfeito e encontros alinhados",
+      "Execução limpa e organizada",
+      "Recortes e detalhes executados com precisão",
+      "Acabamento pronto para pintura premium"
+    ]
+  },
+  {
+    eyebrow: "Pinturas premium",
+    title: "Acabamento final que transforma o ambiente.",
+    text:
+      "A pintura é a etapa que revela a qualidade de todo o trabalho. Executamos cada fase com cuidado, técnica e atenção aos detalhes, garantindo superfícies uniformes e acabamento superior.",
+    image: pintura01,
+    bullets: [
+      "Aplicação de massa corrida com nivelamento uniforme",
+      "Selador aplicado corretamente para melhor aderência",
+      "Pintura lisa, sem marcas, sem falhas e com excelente cobertura",
+      "Proteção de pisos, tomadas e esquadrias"
+    ]
+  },
+  {
+    eyebrow: "Benefícios da construção a seco",
+    title: "Qualidade, rapidez, organização e menor desperdício.",
+    text:
+      "A construção a seco reduz prazos, melhora o controle de obra, diminui desperdícios e permite maior precisão em paredes, forros, revestimentos e estruturas.",
+    image: obra02,
+    bullets: [
+      "Obra muito mais rápida e organizada",
+      "Processo limpo, sustentável e sem desperdício de materiais",
+      "Conforto acústico e térmico superior",
+      "Flexibilidade para futuras alterações",
+      "Precisão milimétrica e acabamento perfeito"
+    ]
+  }
+];
+
+const partnerCompanies = ["AJ Realty", "AFG", "CNA", "Pasqualotto GT"];
+
 export function PortfolioPage() {
   const [activeCategory, setActiveCategory] = useState("Todos");
   const [selectedItem, setSelectedItem] = useState(null);
@@ -160,6 +270,9 @@ export function PortfolioPage() {
           <span>Portfólio técnico</span>
           <h1>Portfólio Oppermann</h1>
           <p>Obras reais. Resultados de alto padrão.</p>
+          <a className="btn btn-primary" href="#portfolio-completo">
+            Ver portfólio completo
+          </a>
         </div>
       </section>
 
@@ -200,6 +313,50 @@ export function PortfolioPage() {
                 <strong>{item.title}</strong>
               </button>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="portfolio-completo" className="section complete-portfolio" aria-labelledby="complete-portfolio-title">
+        <div className="container">
+          <div className="portfolio-page-heading complete-portfolio-heading">
+            <span>Novo portfólio completo</span>
+            <h2 id="complete-portfolio-title">Construindo o futuro com excelência.</h2>
+            <p>
+              Engenharia aplicada, execução real e resultado que valoriza cada detalhe da obra.
+            </p>
+          </div>
+
+          <div className="complete-portfolio-grid">
+            {completePortfolioSections.map((section) => (
+              <article className="complete-portfolio-card" key={section.title}>
+                <div className="complete-portfolio-media">
+                  <img src={section.image} alt={section.title} loading="lazy" />
+                </div>
+                <div className="complete-portfolio-content">
+                  <span>{section.eyebrow}</span>
+                  <h3>{section.title}</h3>
+                  <p>{section.text}</p>
+                  <ul>
+                    {section.bullets.map((bullet) => (
+                      <li key={bullet}>{bullet}</li>
+                    ))}
+                  </ul>
+                </div>
+              </article>
+            ))}
+          </div>
+
+          <div className="portfolio-companies-panel">
+            <div>
+              <span>Empresas com as quais já colaboramos</span>
+              <h3>Relacionamentos construídos com organização, qualidade e responsabilidade.</h3>
+            </div>
+            <div className="portfolio-company-list">
+              {partnerCompanies.map((company) => (
+                <strong key={company}>{company}</strong>
+              ))}
+            </div>
           </div>
         </div>
       </section>
