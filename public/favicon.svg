@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" role="img" aria-label="OPPERMANN Construção a Seco">
+  <rect width="1000" height="1000" fill="#000000"/>
+  <defs>
+    <linearGradient id="oppermannGold" x1="162" y1="500" x2="837" y2="500" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F6EF97"/>
+      <stop offset="0.33" stop-color="#EFE08C"/>
+      <stop offset="0.60" stop-color="#DDAF6D"/>
+      <stop offset="0.82" stop-color="#E7CF92"/>
+      <stop offset="1" stop-color="#F8F5C3"/>
+    </linearGradient>
+  </defs>
+  <rect x="162" y="312" width="675" height="375" fill="url(#oppermannGold)"/>
+</svg>
