@@ -1,13 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" role="img" aria-label="OPPERMANN Construção a Seco">
-  <rect width="1000" height="1000" fill="#000000"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="OPPERMANN Construção a Seco">
+  <rect width="512" height="512" rx="96" fill="#050505"/>
   <defs>
-    <linearGradient id="oppermannGold" x1="162" y1="500" x2="837" y2="500" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#F6EF97"/>
-      <stop offset="0.33" stop-color="#EFE08C"/>
-      <stop offset="0.60" stop-color="#DDAF6D"/>
-      <stop offset="0.82" stop-color="#E7CF92"/>
-      <stop offset="1" stop-color="#F8F5C3"/>
+    <linearGradient id="gold" x1="92" y1="96" x2="420" y2="416" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFF4A8"/>
+      <stop offset="0.35" stop-color="#D7A84E"/>
+      <stop offset="0.7" stop-color="#F3DA87"/>
+      <stop offset="1" stop-color="#B77B25"/>
     </linearGradient>
   </defs>
-  <rect x="162" y="312" width="675" height="375" fill="url(#oppermannGold)"/>
+  <path d="M256 106c-54 0-98 18-130 50-34 34-51 78-51 132s17 98 51 132c32 32 76 50 130 50s98-18 130-50c34-34 51-78 51-132s-17-98-51-132c-32-32-76-50-130-50Zm0 72c31 0 56 10 75 30 19 20 28 47 28 80s-9 60-28 80c-19 20-44 30-75 30s-56-10-75-30c-19-20-28-47-28-80s9-60 28-80c19-20 44-30 75-30Z" fill="url(#gold)"/>
+  <path d="M244 238h24v100h-24zM206 276h100v24H206z" fill="#050505" opacity="0.92"/>
 </svg>
