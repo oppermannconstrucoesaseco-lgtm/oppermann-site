@@ -67,18 +67,6 @@ export function PortfolioPage() {
         </div>
       </section>
 
-      <section className="section portfolio-instagram">
-        <div className="container portfolio-instagram-panel">
-          <div>
-            <span>Instagram</span>
-            <h2>Mais obras, bastidores e acabamentos da Oppermann.</h2>
-          </div>
-          <a className="btn btn-secondary" href="https://www.instagram.com/oppermann.construcao" target="_blank" rel="noreferrer">
-            Ver mais no Instagram
-          </a>
-        </div>
-      </section>
-
       <section className="section portfolio-final-cta">
         <div className="container portfolio-final-panel">
           <h2>Pronto para tirar seu projeto do papel com qualidade e alto padrão?</h2>
