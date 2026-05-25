@@ -854,9 +854,8 @@ body:has(#contato:target) .site-nav a[href="#contato"]::after {
   gap: 22px;
 }
 
-.gallery-grid .gallery-card:last-child:nth-child(3n+1) {
-  grid-column: 1 / -1;
-  max-width: calc(33.333% - 8px);
+.gallery-grid .gallery-card:last-child:nth-child(3n + 1) {
+  grid-column: 2;
 }
 
 .gallery-card {

@@ -2,9 +2,7 @@ import servicoSteelFrame from "../assets/servico-steel-frame.jpg";
 import servicoDrywall from "../assets/servico-drywall.jpg";
 import servicoPintura from "../assets/servico-pintura.jpg";
 import servicoRevestimentos from "../assets/servico-revestimentos.jpg";
-import galeria01 from "../assets/galeria-01.jpg";
-import galeria02 from "../assets/galeria-02.png";
-import galeria03 from "../assets/galeria-03.jpg";
+import obraPisoVinilico from "../assets/obra-piso-vinilico-01.jpg";
 
 export const company = {
   legalName: "OPPERMANN CONSTRUCAO A SECO LTDA",
@@ -89,18 +87,23 @@ export const differentials = [
 
 export const galleryItems = [
   {
-    title: "Obra Oppermann",
+    title: "Estrutura em steel frame",
     label: "Steel Frame",
-    image: galeria01
+    image: servicoSteelFrame
   },
   {
-    title: "Obra Oppermann",
+    title: "Drywall técnico",
     label: "Drywall",
-    image: galeria02
+    image: servicoDrywall
   },
   {
-    title: "Obra Oppermann",
-    label: "Acabamento",
-    image: galeria03
+    title: "Pintura e acabamento premium",
+    label: "Pintura Premium",
+    image: servicoPintura
+  },
+  {
+    title: "Piso vinílico aplicado",
+    label: "Piso Vinílico",
+    image: obraPisoVinilico
   }
 ];
