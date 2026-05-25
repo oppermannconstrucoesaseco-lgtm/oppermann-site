@@ -14,7 +14,7 @@ export function Services() {
         </SectionTitle>
         <div className="cards-grid">
           {services.map((service, index) => (
-            <article className="service-card" key={service.title}>
+            <a className="service-card" key={service.title} href={service.url}>
               <div className="service-body">
                 <div className="service-icon">
                   <Icon name={iconNames[index]} />
@@ -22,7 +22,8 @@ export function Services() {
                 <h3>{service.title}</h3>
                 <p>{service.description}</p>
               </div>
-            </article>
+              <span className="service-link">Ver mais →</span>
+            </a>
           ))}
         </div>
       </div>
