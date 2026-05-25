@@ -14,7 +14,7 @@ export function BeforeAfter() {
         <div className="before-after-grid">
           <figure className="before-after-card">
             <div className="before-after-label before-after-label--antes">Antes</div>
-            <img src={antes} alt="Corredor em fase de estrutura — steel frame e instalações aparentes" loading="lazy" />
+            <img src={antes} alt="Corredor em fase de estrutura — steel frame e instalações aparentes" loading="lazy" style={{ objectPosition: 'top' }} />
           </figure>
 
           <figure className="before-after-card">
