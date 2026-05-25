@@ -35,7 +35,7 @@ export function Contact() {
     ].join("\n");
 
     setFormMessage("Abrindo o WhatsApp com sua solicitação...");
-    window.open(`https://wa.me/5541974020220?text=${encodeURIComponent(whatsappText)}`, "_blank", "noopener,noreferrer");
+    window.open(getWhatsAppUrl(whatsappText), "_blank", "noopener,noreferrer");
   }
 
   return (
