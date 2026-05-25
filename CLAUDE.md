@@ -2,72 +2,72 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
-## Project Overview
+## Visão geral do projeto
 
-Institutional website for **OPPERMANN Construção a Seco**, a Brazilian dry-construction company (steel frame, drywall, painting, coatings) based in Itapema, SC. The site is a React + Vite SPA deployed on Vercel at `https://oppermannsteel.com.br`.
+Site institucional da **OPPERMANN Construção a Seco**, empresa especializada em steel frame, drywall, pintura e revestimentos, sediada em Itapema/SC. O site é um SPA em React + Vite publicado na Vercel em `https://oppermannsteel.com.br`.
 
-## Commands
+## Comandos
 
 ```bash
-npm install        # Install dependencies
-npm run dev        # Start dev server at http://localhost:5173
-npm run build      # Build for production into dist/
-npm run preview    # Preview the production build locally
+npm install        # Instala as dependências
+npm run dev        # Inicia o servidor local em http://localhost:5173
+npm run build      # Gera a versão de produção na pasta dist/
+npm run preview    # Visualiza a versão de produção localmente
 ```
 
-There is no lint script, no test runner, and no TypeScript configured.
+Não há script de lint, framework de testes nem TypeScript configurado.
 
-## Architecture
+## Arquitetura
 
-### Routing — no React Router
+### Roteamento — sem React Router
 
-Routing is manual: `App.jsx` reads `window.location.pathname` directly and decides which page to render. Three page types exist:
+O roteamento é manual: `App.jsx` lê `window.location.pathname` diretamente e decide qual página renderizar. Existem três tipos de página:
 
-| Pattern | Rendered by |
+| Caminho | Renderizado por |
 |---|---|
-| `/` (default) | Inline `<main>` with all landing-page sections |
+| `/` (padrão) | `<main>` inline com todas as seções da landing page |
 | `/portfolio` | `<PortfolioPage>` |
 | `/drywall-itapema`, `/steel-frame-itapema`, etc. | `<ServiceSeoPage>` |
 
-To add a new SEO page, add an entry to the `servicePages` object inside `src/components/ServiceSeoPage.jsx`. `getServicePage(pathname)` will pick it up automatically; no changes to `App.jsx` needed.
+Para adicionar uma nova página de SEO, basta incluir uma entrada no objeto `servicePages` dentro de `src/components/ServiceSeoPage.jsx`. A função `getServicePage(pathname)` a reconhecerá automaticamente — nenhuma alteração em `App.jsx` é necessária.
 
-`vercel.json` contains a catch-all rewrite (`/(.*)` → `/index.html`) that enables SPA navigation.
+O `vercel.json` contém um rewrite genérico (`/(.*)` → `/index.html`) que permite a navegação SPA sem recarregar a página.
 
-### Centralised content — `src/data/siteContent.js`
+### Conteúdo centralizado — `src/data/siteContent.js`
 
-All business data lives here: company name, CNPJ, address, phone/WhatsApp number, email, service area, service descriptions, differentials, and gallery items. **This is the single source of truth for content changes.** Both UI components and link utilities import from it.
+Todos os dados da empresa ficam aqui: razão social, CNPJ, endereço, telefone/WhatsApp, e-mail, regiões atendidas, descrição dos serviços, diferenciais e itens da galeria. **Este é o único lugar para alterar conteúdo textual do site.** Os componentes e os utilitários de links importam tudo daqui.
 
-`src/utils/links.js` exposes `getWhatsAppUrl(message?)` and `getMailToUrl()`, which are built from `siteContent.js`. Always use these helpers — never hardcode phone numbers or email addresses in components.
+`src/utils/links.js` expõe `getWhatsAppUrl(mensagem?)` e `getMailToUrl()`, construídos a partir do `siteContent.js`. Sempre use essas funções — nunca escreva número de telefone ou e-mail diretamente nos componentes.
 
-### Styling
+### Estilos
 
-Global styles live in `src/styles/index.css`. Two additional CSS files scope styles to specific page types:
-- `src/styles/service-seo.css` — used by `ServiceSeoPage`
-- `src/styles/portfolio-complete.css` — used by `PortfolioPage`
+Os estilos globais ficam em `src/styles/index.css`. Dois arquivos CSS adicionais escopam estilos de páginas específicas:
+- `src/styles/service-seo.css` — usado por `ServiceSeoPage`
+- `src/styles/portfolio-complete.css` — usado por `PortfolioPage`
 
-Brand variables are defined at the top of `index.css` and should be referenced by name in all new CSS:
+As variáveis de marca estão no topo do `index.css` e devem ser referenciadas pelo nome em todo CSS novo:
 
 ```css
---color-gold, --color-gold-bright   /* primary accent */
---color-bg, --color-bg-soft         /* backgrounds */
---color-panel, --color-panel-strong /* card/panel fills */
---color-text, --color-muted         /* typography */
---color-line                        /* dividers */
---container                         /* max content width (1160px) */
+--color-gold, --color-gold-bright   /* cor de destaque principal (dourado) */
+--color-bg, --color-bg-soft         /* fundos */
+--color-panel, --color-panel-strong /* preenchimento de cards e painéis */
+--color-text, --color-muted         /* tipografia */
+--color-line                        /* divisores */
+--container                         /* largura máxima do conteúdo (1160px) */
 ```
 
-Use the `.container` and `.section` utility classes for consistent layout and spacing.
+Use as classes utilitárias `.container` e `.section` para manter o layout e o espaçamento consistentes.
 
-### Contact form
+### Formulário de contato
 
-The contact form in `Contact.jsx` does **not** use a backend. On submit, it builds a WhatsApp message from the form fields and opens `wa.me/` in a new tab. If a backend or email service is ever wired in, this is the integration point.
+O formulário em `Contact.jsx` **não usa backend**. Ao enviar, ele monta uma mensagem com os campos preenchidos e abre o `wa.me/` em uma nova aba do WhatsApp. Se futuramente for integrado a um serviço de e-mail ou backend, este é o ponto de integração.
 
 ### SEO
 
-Each SEO service page dynamically updates `document.title`, `meta[name="description"]`, and `meta[name="keywords"]` via a `useEffect` in `ServiceSeoPage`. The base meta tags in `index.html` serve the homepage. Structured data (JSON-LD `LocalBusiness`) is also hardcoded in `index.html`.
+Cada página de serviço atualiza dinamicamente `document.title`, `meta[name="description"]` e `meta[name="keywords"]` via `useEffect` em `ServiceSeoPage`. As metatags da homepage ficam estáticas no `index.html`. Os dados estruturados (JSON-LD `LocalBusiness`) também estão fixos no `index.html`.
 
 ### Assets
 
-- Static assets imported directly into components live in `src/assets/`
-- Files served without hashing (robots.txt, sitemap.xml, favicons) live in `public/`
-- Portfolio original presentation images are in `src/assets/portfolio-original/` and have a `.jpg.png` double extension — this is intentional
+- Imagens importadas diretamente nos componentes ficam em `src/assets/`
+- Arquivos servidos sem hash (robots.txt, sitemap.xml, favicons) ficam em `public/`
+- As imagens do portfólio original estão em `src/assets/portfolio-original/` e têm extensão dupla `.jpg.png` — isso é intencional
