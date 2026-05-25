@@ -4,7 +4,7 @@ import { getWhatsAppUrl } from "../utils/links.js";
 import "../styles/service-seo.css";
 import drywallImage from "../assets/servico-drywall.jpg";
 import steelFrameImage from "../assets/servico-steel-frame.jpg";
-import pinturaImage from "../assets/obra-pintura-01.jpg";
+import pinturaImage from "../assets/servico-pintura.jpg";
 import revestimentosImage from "../assets/servico-revestimentos.jpg";
 
 const servicePages = {
