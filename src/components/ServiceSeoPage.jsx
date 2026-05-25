@@ -7,6 +7,7 @@ import steelFrameImage from "../assets/servico-steel-frame.jpg";
 import pinturaImage from "../assets/servico-pintura.jpg";
 import revestimentosImage from "../assets/servico-revestimentos.jpg";
 import forroModularImage from "../assets/obra-forro-modular-01.jpg";
+import pisoViniloImage from "../assets/obra-piso-vinilico-01.jpg";
 
 const servicePages = {
   "/drywall-itapema": {
@@ -151,6 +152,30 @@ const servicePages = {
       "Integração com iluminação e ar-condicionado",
       "Forro modular para ambientes comerciais",
       "Forro modular para residências de alto padrão"
+    ]
+  },
+  "/piso-vinilico-itapema": {
+    eyebrow: "Piso Vinílico em Itapema",
+    title: "Piso Vinílico em Itapema com instalação técnica e acabamento de alto padrão",
+    description:
+      "Instalação de piso vinílico para ambientes residenciais e comerciais em Itapema e região. Execução limpa, rápida e com resultado elegante.",
+    image: pisoViniloImage,
+    keywords: "piso vinílico em Itapema, instalação piso vinílico Itapema, piso vinílico residencial, piso vinílico comercial Itapema",
+    intro:
+      "O piso vinílico combina estética, praticidade e durabilidade. Com acabamento que imita madeira e outros materiais nobres, é ideal para quem busca resultado elegante com instalação limpa e rápida. A Oppermann instala com alinhamento preciso e acabamento superior.",
+    benefits: [
+      "Instalação rápida e sem sujeira excessiva",
+      "Acabamento elegante que imita madeira e outros materiais",
+      "Alta durabilidade e fácil manutenção",
+      "Ideal para ambientes residenciais, comerciais e corporativos",
+      "Compatível com piso aquecido e ambientes úmidos (vinílico 100% impermeável)"
+    ],
+    services: [
+      "Piso vinílico em régua",
+      "Piso vinílico em manta",
+      "Instalação sobre contrapiso e porcelanato",
+      "Rodapé e acabamentos",
+      "Piso vinílico para ambientes comerciais e residenciais"
     ]
   }
 };

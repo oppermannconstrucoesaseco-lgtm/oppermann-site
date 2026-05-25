@@ -63,6 +63,11 @@ export const services = [
       "Aplicação de revestimentos com atenção aos detalhes, paginação organizada e acabamento profissional."
   },
   {
+    title: "Piso Vinílico",
+    description:
+      "Instalação de piso vinílico com acabamento refinado, praticidade e durabilidade para ambientes residenciais e comerciais."
+  },
+  {
     title: "Pintura interna e externa",
     description:
       "Pintura para áreas internas e externas com preparo correto, proteção das superfícies e visual superior."
