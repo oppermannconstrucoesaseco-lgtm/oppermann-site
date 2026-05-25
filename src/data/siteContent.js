@@ -43,9 +43,14 @@ export const services = [
       "Soluções em drywall para ambientes internos com acabamento refinado, agilidade e obra mais limpa."
   },
   {
-    title: "Forros",
+    title: "Forros em Drywall",
     description:
       "Forros em drywall com alinhamento técnico, integração de iluminação e acabamento de alto padrão."
+  },
+  {
+    title: "Forro Modular",
+    description:
+      "Forro modular em diversas opções de acabamento para ambientes comerciais e residenciais de alto padrão."
   },
   {
     title: "Paredes",

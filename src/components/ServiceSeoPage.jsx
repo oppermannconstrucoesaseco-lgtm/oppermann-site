@@ -6,6 +6,7 @@ import drywallImage from "../assets/servico-drywall.jpg";
 import steelFrameImage from "../assets/servico-steel-frame.jpg";
 import pinturaImage from "../assets/servico-pintura.jpg";
 import revestimentosImage from "../assets/servico-revestimentos.jpg";
+import forroModularImage from "../assets/obra-forro-modular-01.jpg";
 
 const servicePages = {
   "/drywall-itapema": {
@@ -126,6 +127,30 @@ const servicePages = {
       "Rebaixamento de teto",
       "Detalhes para iluminação",
       "Manutenção e adequações em forros existentes"
+    ]
+  },
+  "/forro-modular-itapema": {
+    eyebrow: "Forro Modular em Itapema",
+    title: "Forro Modular em Itapema com acabamento de alto padrão para ambientes modernos",
+    description:
+      "Instalação de forro modular para ambientes comerciais e residenciais em Itapema e região. Execução técnica, nivelamento preciso e acabamento superior.",
+    image: forroModularImage,
+    keywords: "forro modular em Itapema, forro modular Itapema, forro modular comercial, instalação forro modular",
+    intro:
+      "O forro modular é a solução ideal para ambientes comerciais, corporativos e residenciais que exigem acabamento refinado, facilidade de manutenção e visual moderno. A Oppermann executa com alinhamento técnico e resultado de alto padrão.",
+    benefits: [
+      "Acabamento limpo e moderno",
+      "Fácil acesso para manutenção de instalações",
+      "Opções variadas de placa e perfil",
+      "Execução rápida com mínimo de sujeira",
+      "Ideal para salas comerciais, lojas, consultórios e ambientes corporativos"
+    ],
+    services: [
+      "Forro modular em diversas dimensões",
+      "Perfis e acabamentos variados",
+      "Integração com iluminação e ar-condicionado",
+      "Forro modular para ambientes comerciais",
+      "Forro modular para residências de alto padrão"
     ]
   }
 };
