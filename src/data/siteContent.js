@@ -1,12 +1,8 @@
 import servicoSteelFrame from "../assets/servico-steel-frame.jpg";
 import servicoDrywall from "../assets/servico-drywall.jpg";
-import servicoPintura from "../assets/obra-pintura-01.jpg";
+import servicoPintura from "../assets/servico-pintura.jpg";
 import servicoRevestimentos from "../assets/servico-revestimentos.jpg";
-import obraSteelFrame from "../assets/obra-steel-frame-01.jpg";
-import obraDrywall from "../assets/obra-drywall-01.jpg";
-import obraForroModular from "../assets/obra-forro-modular-01.jpg";
 import obraPisoVinilico from "../assets/obra-piso-vinilico-01.jpg";
-import obraPintura from "../assets/obra-pintura-01.jpg";
 
 export const company = {
   legalName: "OPPERMANN CONSTRUCAO A SECO LTDA",
@@ -91,33 +87,23 @@ export const differentials = [
 
 export const galleryItems = [
   {
-    title: "Steel frame em andamento",
+    title: "Estrutura em steel frame",
     label: "Steel Frame",
-    image: obraSteelFrame
+    image: servicoSteelFrame
   },
   {
-    title: "Paredes em drywall",
+    title: "Drywall técnico",
     label: "Drywall",
-    image: obraDrywall
+    image: servicoDrywall
   },
   {
-    title: "Forro modular instalado",
-    label: "Forro Modular",
-    image: obraForroModular
+    title: "Pintura e acabamento premium",
+    label: "Pintura Premium",
+    image: servicoPintura
   },
   {
     title: "Piso vinílico aplicado",
     label: "Piso Vinílico",
     image: obraPisoVinilico
-  },
-  {
-    title: "Pintura de acabamento",
-    label: "Pintura",
-    image: obraPintura
-  },
-  {
-    title: "Execução e acabamento premium",
-    label: "Acabamento",
-    image: servicoRevestimentos
   }
 ];
