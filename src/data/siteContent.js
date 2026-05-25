@@ -2,7 +2,7 @@ import servicoSteelFrame from "../assets/servico-steel-frame.jpg";
 import servicoDrywall from "../assets/servico-drywall.jpg";
 import servicoPintura from "../assets/servico-pintura.jpg";
 import servicoRevestimentos from "../assets/servico-revestimentos.jpg";
-import obraPisoVinilico from "../assets/obra-piso-vinilico-01.jpg";
+import obraPisoVinilico from "../assets/obra-piso-vinilico-06.jpg";
 
 export const company = {
   legalName: "OPPERMANN CONSTRUCAO A SECO LTDA",

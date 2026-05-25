@@ -1518,6 +1518,11 @@ body:has(#contato:target) .site-nav a[href="#contato"]::after {
     grid-template-columns: 1fr;
   }
 
+  /* Cancela o centramento do 4º card — no mobile fica empilhado */
+  .gallery-grid .gallery-card:last-child:nth-child(3n + 1) {
+    grid-column: auto;
+  }
+
   .portfolio-hero {
     min-height: 68svh;
     padding: 136px 0 54px;
