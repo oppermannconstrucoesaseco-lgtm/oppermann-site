@@ -1,6 +1,7 @@
-import servicoPintura from "../assets/servico-pintura.jpg";
-import obraSteelFrame01 from "../assets/obra-steel-frame-01.jpg";
-import obraDrywall01 from "../assets/obra-drywall-01.jpg";
+import servicoSteelFrame from "../assets/servico-steel-frame.jpg";
+import servicoDrywall from "../assets/servico-drywall.jpg";
+import servicoPintura from "../assets/obra-pintura-01.jpg";
+import servicoRevestimentos from "../assets/servico-revestimentos.jpg";
 
 export const company = {
   legalName: "OPPERMANN CONSTRUCAO A SECO LTDA",
@@ -77,12 +78,12 @@ export const galleryItems = [
   {
     title: "Estrutura em steel frame",
     label: "Steel Frame",
-    image: obraSteelFrame01
+    image: servicoSteelFrame
   },
   {
     title: "Drywall técnico",
     label: "Drywall",
-    image: obraDrywall01
+    image: servicoDrywall
   },
   {
     title: "Pintura e acabamento premium",
