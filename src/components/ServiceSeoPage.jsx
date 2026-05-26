@@ -6,6 +6,35 @@ import drywallImage from "../assets/servico-drywall.jpg";
 import steelFrameImage from "../assets/servico-steel-frame.jpg";
 import pinturaImage from "../assets/servico-pintura.jpg";
 import revestimentosImage from "../assets/servico-revestimentos.jpg";
+import forroModularImage from "../assets/obra-forro-modular-01.jpg";
+import pisoViniloImage from "../assets/obra-piso-vinilico-01.jpg";
+
+// Galeria Drywall
+import dwEstrutura01 from "../assets/dw-estrutura-01.jpg";
+import dwEstrutura02 from "../assets/dw-estrutura-02.jpg";
+import dwEstrutura03 from "../assets/dw-estrutura-03.jpg";
+import dwEstrutura04 from "../assets/dw-estrutura-04.jpg";
+import dwEstrutura05 from "../assets/dw-estrutura-05.jpg";
+import dwCorredor01 from "../assets/dw-corredor-01.jpg";
+import dwCorredor02 from "../assets/dw-corredor-02.jpg";
+import dwCorredor03 from "../assets/dw-corredor-03.jpg";
+import dwPainel01 from "../assets/dw-painel-01.jpg";
+import dwPainel02 from "../assets/dw-painel-02.jpg";
+import dwPainel03 from "../assets/dw-painel-03.jpg";
+import dwPainel04 from "../assets/dw-painel-04.jpg";
+import dwIsolamento01 from "../assets/dw-isolamento-01.jpg";
+
+// Galeria Steel Frame
+import sfInterior01 from "../assets/sf-interior-01.jpg";
+import sfFachada01 from "../assets/sf-fachada-01.jpg";
+import sfFachada02 from "../assets/sf-fachada-02.jpg";
+import sfEscada01 from "../assets/sf-escada-01.jpg";
+import sfEstrutura01 from "../assets/sf-estrutura-01.jpg";
+import sfEstrutura02 from "../assets/sf-estrutura-02.jpg";
+import sfEstrutura03 from "../assets/sf-estrutura-03.jpg";
+import sfInterior02 from "../assets/sf-interior-02.jpg";
+import sfInterior03 from "../assets/sf-interior-03.jpg";
+import sfInterior04 from "../assets/sf-interior-04.jpg";
 
 const servicePages = {
   "/drywall-itapema": {
@@ -30,6 +59,21 @@ const servicePages = {
       "Fechamentos técnicos",
       "Sancas, cortineiros e detalhes",
       "Revestimentos internos em drywall"
+    ],
+    gallery: [
+      { src: dwEstrutura04, alt: "Estrutura metálica de drywall com instalações" },
+      { src: dwEstrutura01, alt: "Perfis metálicos para paredes de drywall" },
+      { src: dwCorredor01, alt: "Corredor com estrutura de drywall" },
+      { src: dwEstrutura02, alt: "Estrutura de drywall em obra" },
+      { src: dwPainel01, alt: "Painéis de drywall instalados" },
+      { src: dwPainel02, alt: "Drywall com janela — vista para a cidade" },
+      { src: dwEstrutura03, alt: "Montagem de estrutura metálica drywall" },
+      { src: dwPainel03, alt: "Corredor com paredes de drywall" },
+      { src: dwIsolamento01, alt: "Isolamento acústico em parede de drywall" },
+      { src: dwEstrutura05, alt: "Perfis metálicos para drywall com instalações" },
+      { src: dwPainel04, alt: "Parede de drywall com caixas de instalação" },
+      { src: dwCorredor02, alt: "Corredor de drywall em andamento" },
+      { src: dwCorredor03, alt: "Paredes de drywall em corredor" },
     ]
   },
   "/steel-frame-itapema": {
@@ -54,6 +98,18 @@ const servicePages = {
       "Fachadas e soluções externas",
       "Ampliações e obras residenciais",
       "Integração com drywall, forros e pintura"
+    ],
+    gallery: [
+      { src: sfEscada01, alt: "Estrutura em steel frame com escada metálica" },
+      { src: sfEstrutura01, alt: "Estrutura metálica steel frame em galpão" },
+      { src: sfEstrutura02, alt: "Montagem da estrutura em steel frame" },
+      { src: sfEstrutura03, alt: "Piso em steel frame — perfis metálicos" },
+      { src: sfInterior01, alt: "Interior com fechamento em steel frame" },
+      { src: sfFachada01, alt: "Fachada com painéis em steel frame" },
+      { src: sfFachada02, alt: "Revestimento externo em steel frame" },
+      { src: sfInterior03, alt: "Espaço aberto com estrutura steel frame" },
+      { src: sfInterior04, alt: "Ambiente em obra com steel frame" },
+      { src: sfInterior02, alt: "Obra em steel frame com vista para a cidade" },
     ]
   },
   "/construcao-a-seco-itapema": {
@@ -127,6 +183,54 @@ const servicePages = {
       "Detalhes para iluminação",
       "Manutenção e adequações em forros existentes"
     ]
+  },
+  "/forro-modular-itapema": {
+    eyebrow: "Forro Modular em Itapema",
+    title: "Forro Modular em Itapema com acabamento de alto padrão para ambientes modernos",
+    description:
+      "Instalação de forro modular para ambientes comerciais e residenciais em Itapema e região. Execução técnica, nivelamento preciso e acabamento superior.",
+    image: forroModularImage,
+    keywords: "forro modular em Itapema, forro modular Itapema, forro modular comercial, instalação forro modular",
+    intro:
+      "O forro modular é a solução ideal para ambientes comerciais, corporativos e residenciais que exigem acabamento refinado, facilidade de manutenção e visual moderno. A Oppermann executa com alinhamento técnico e resultado de alto padrão.",
+    benefits: [
+      "Acabamento limpo e moderno",
+      "Fácil acesso para manutenção de instalações",
+      "Opções variadas de placa e perfil",
+      "Execução rápida com mínimo de sujeira",
+      "Ideal para salas comerciais, lojas, consultórios e ambientes corporativos"
+    ],
+    services: [
+      "Forro modular em diversas dimensões",
+      "Perfis e acabamentos variados",
+      "Integração com iluminação e ar-condicionado",
+      "Forro modular para ambientes comerciais",
+      "Forro modular para residências de alto padrão"
+    ]
+  },
+  "/piso-vinilico-itapema": {
+    eyebrow: "Piso Vinílico em Itapema",
+    title: "Piso Vinílico em Itapema com instalação técnica e acabamento de alto padrão",
+    description:
+      "Instalação de piso vinílico para ambientes residenciais e comerciais em Itapema e região. Execução limpa, rápida e com resultado elegante.",
+    image: pisoViniloImage,
+    keywords: "piso vinílico em Itapema, instalação piso vinílico Itapema, piso vinílico residencial, piso vinílico comercial Itapema",
+    intro:
+      "O piso vinílico combina estética, praticidade e durabilidade. Com acabamento que imita madeira e outros materiais nobres, é ideal para quem busca resultado elegante com instalação limpa e rápida. A Oppermann instala com alinhamento preciso e acabamento superior.",
+    benefits: [
+      "Instalação rápida e sem sujeira excessiva",
+      "Acabamento elegante que imita madeira e outros materiais",
+      "Alta durabilidade e fácil manutenção",
+      "Ideal para ambientes residenciais, comerciais e corporativos",
+      "Compatível com piso aquecido e ambientes úmidos (vinílico 100% impermeável)"
+    ],
+    services: [
+      "Piso vinílico em régua",
+      "Piso vinílico em manta",
+      "Instalação sobre contrapiso e porcelanato",
+      "Rodapé e acabamentos",
+      "Piso vinílico para ambientes comerciais e residenciais"
+    ]
   }
 };
 
@@ -168,6 +272,20 @@ export function ServiceSeoPage({ page }) {
           </figure>
         </div>
       </section>
+
+      {page.gallery && page.gallery.length > 0 && (
+        <section className="section service-seo-gallery">
+          <div className="container">
+            <div className="service-seo-gallery-grid">
+              {page.gallery.map((item, i) => (
+                <figure key={i} className="service-seo-gallery-item">
+                  <img src={item.src} alt={item.alt} loading="lazy" />
+                </figure>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       <section className="section service-seo-content">
         <div className="container service-seo-panels">
