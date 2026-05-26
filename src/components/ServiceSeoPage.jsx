@@ -9,6 +9,18 @@ import revestimentosImage from "../assets/servico-revestimentos.jpg";
 import forroModularImage from "../assets/obra-forro-modular-01.jpg";
 import pisoViniloImage from "../assets/obra-piso-vinilico-01.jpg";
 
+// Galeria Steel Frame
+import sfInterior01 from "../assets/sf-interior-01.jpg";
+import sfFachada01 from "../assets/sf-fachada-01.jpg";
+import sfFachada02 from "../assets/sf-fachada-02.jpg";
+import sfEscada01 from "../assets/sf-escada-01.jpg";
+import sfEstrutura01 from "../assets/sf-estrutura-01.jpg";
+import sfEstrutura02 from "../assets/sf-estrutura-02.jpg";
+import sfEstrutura03 from "../assets/sf-estrutura-03.jpg";
+import sfInterior02 from "../assets/sf-interior-02.jpg";
+import sfInterior03 from "../assets/sf-interior-03.jpg";
+import sfInterior04 from "../assets/sf-interior-04.jpg";
+
 const servicePages = {
   "/drywall-itapema": {
     eyebrow: "Drywall em Itapema",
@@ -56,6 +68,18 @@ const servicePages = {
       "Fachadas e soluções externas",
       "Ampliações e obras residenciais",
       "Integração com drywall, forros e pintura"
+    ],
+    gallery: [
+      { src: sfEscada01, alt: "Estrutura em steel frame com escada metálica" },
+      { src: sfEstrutura01, alt: "Estrutura metálica steel frame em galpão" },
+      { src: sfEstrutura02, alt: "Montagem da estrutura em steel frame" },
+      { src: sfEstrutura03, alt: "Piso em steel frame — perfis metálicos" },
+      { src: sfInterior01, alt: "Interior com fechamento em steel frame" },
+      { src: sfFachada01, alt: "Fachada com painéis em steel frame" },
+      { src: sfFachada02, alt: "Revestimento externo em steel frame" },
+      { src: sfInterior03, alt: "Espaço aberto com estrutura steel frame" },
+      { src: sfInterior04, alt: "Ambiente em obra com steel frame" },
+      { src: sfInterior02, alt: "Obra em steel frame com vista para a cidade" },
     ]
   },
   "/construcao-a-seco-itapema": {
@@ -218,6 +242,20 @@ export function ServiceSeoPage({ page }) {
           </figure>
         </div>
       </section>
+
+      {page.gallery && page.gallery.length > 0 && (
+        <section className="section service-seo-gallery">
+          <div className="container">
+            <div className="service-seo-gallery-grid">
+              {page.gallery.map((item, i) => (
+                <figure key={i} className="service-seo-gallery-item">
+                  <img src={item.src} alt={item.alt} loading="lazy" />
+                </figure>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       <section className="section service-seo-content">
         <div className="container service-seo-panels">
