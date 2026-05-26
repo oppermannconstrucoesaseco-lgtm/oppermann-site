@@ -9,6 +9,16 @@ import revestimentosImage from "../assets/servico-revestimentos.jpg";
 import forroModularImage from "../assets/obra-forro-modular-01.jpg";
 import pisoViniloImage from "../assets/obra-piso-vinilico-01.jpg";
 
+// Galeria Revestimentos
+import revGaleria01 from "../assets/rev-galeria-01.jpg";
+import revGaleria02 from "../assets/rev-galeria-02.jpg";
+import revGaleria03 from "../assets/rev-galeria-03.jpg";
+import revGaleria04 from "../assets/rev-galeria-04.jpg";
+import revGaleria05 from "../assets/rev-galeria-05.jpg";
+import revGaleria06 from "../assets/rev-galeria-06.jpg";
+import revGaleria07 from "../assets/rev-galeria-07.jpg";
+import revGaleria08 from "../assets/rev-galeria-08.jpg";
+
 // Galeria Pintura
 import pinGaleria01 from "../assets/pin-galeria-01.jpg";
 import pinGaleria02 from "../assets/pin-galeria-02.jpg";
@@ -173,7 +183,7 @@ const servicePages = {
     title: "Construção a seco em Itapema com drywall, steel frame e acabamento premium",
     description:
       "Soluções completas em construção a seco para obras modernas, limpas e eficientes em Itapema, Balneário Camboriú e região.",
-    image: revestimentosImage,
+    image: revGaleria04,
     keywords: "construção a seco em Itapema, obras a seco, drywall e steel frame, construção moderna Itapema",
     intro:
       "A construção a seco une produtividade, precisão e organização de obra. Na Oppermann, aplicamos sistemas como drywall, steel frame, forros, revestimentos e pintura para entregar ambientes modernos e bem executados.",
@@ -190,6 +200,16 @@ const servicePages = {
       "Forros e paredes",
       "Revestimentos a seco",
       "Pintura interna e externa"
+    ],
+    gallery: [
+      { src: revGaleria01, alt: "Estrutura de drywall em obra com instalações elétricas e hidráulicas" },
+      { src: revGaleria02, alt: "Paredes de drywall com aplicação de massa e vista para o mar" },
+      { src: revGaleria03, alt: "Drywall verde (RU) em banheiro com nicho e janela" },
+      { src: revGaleria04, alt: "Quarto com drywall chapeado, forro coffered e janela ampla" },
+      { src: revGaleria05, alt: "Revestimento a seco com drywall e janela com vista para a cidade" },
+      { src: revGaleria06, alt: "Quarto com paredes e forro em drywall — acabamento de alto padrão" },
+      { src: revGaleria07, alt: "Paredes de drywall chapeadas com instalações aparentes" },
+      { src: revGaleria08, alt: "Revestimento com Aquapanel em banheiro com nichos" },
     ]
   },
   "/pintura-premium-itapema": {
