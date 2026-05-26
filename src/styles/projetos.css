@@ -7,7 +7,7 @@
 
 /* Hero */
 .projetos-hero {
-  padding: 80px 0 56px;
+  padding: 150px 0 56px;
   border-bottom: 1px solid var(--color-line);
 }
 
@@ -347,6 +347,10 @@
 
 /* Responsivo */
 @media (max-width: 768px) {
+  .projetos-hero {
+    padding: 124px 0 40px;
+  }
+
   .projeto-card-header { padding: 24px 20px 20px; }
   .projeto-renders { padding: 24px 20px; }
   .projeto-tecnico { padding: 24px 20px; }
