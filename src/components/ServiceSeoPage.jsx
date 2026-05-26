@@ -9,6 +9,23 @@ import revestimentosImage from "../assets/servico-revestimentos.jpg";
 import forroModularImage from "../assets/obra-forro-modular-01.jpg";
 import pisoViniloImage from "../assets/obra-piso-vinilico-01.jpg";
 
+// Galeria Pintura
+import pinGaleria01 from "../assets/pin-galeria-01.jpg";
+import pinGaleria02 from "../assets/pin-galeria-02.jpg";
+import pinGaleria03 from "../assets/pin-galeria-03.jpg";
+import pinGaleria04 from "../assets/pin-galeria-04.jpg";
+import pinGaleria05 from "../assets/pin-galeria-05.jpg";
+import pinGaleria06 from "../assets/pin-galeria-06.jpg";
+import pinGaleria07 from "../assets/pin-galeria-07.jpg";
+import pinGaleria08 from "../assets/pin-galeria-08.jpg";
+import pinGaleria09 from "../assets/pin-galeria-09.jpg";
+import pinGaleria10 from "../assets/pin-galeria-10.jpg";
+import pinGaleria11 from "../assets/pin-galeria-11.jpg";
+import pinGaleria12 from "../assets/pin-galeria-12.jpg";
+import pinGaleria13 from "../assets/pin-galeria-13.jpg";
+import pinGaleria14 from "../assets/pin-galeria-14.jpg";
+import pinGaleria15 from "../assets/pin-galeria-15.jpg";
+
 // Galeria Piso Vinílico
 import pvGaleria01 from "../assets/pv-galeria-01.png";
 import pvGaleria02 from "../assets/pv-galeria-02.png";
@@ -180,7 +197,7 @@ const servicePages = {
     title: "Pintura premium em Itapema com preparo correto e acabamento superior",
     description:
       "Serviços de pintura interna e externa com preparação de superfície, massa, selador e acabamento de alto padrão em Itapema e região.",
-    image: pinturaImage,
+    image: pinGaleria06,
     keywords: "pintura premium em Itapema, pintura residencial Itapema, pintura interna e externa, acabamento premium",
     intro:
       "A pintura é a etapa que revela a qualidade final da obra. Por isso, trabalhamos com preparação correta da superfície, proteção dos ambientes, aplicação técnica e acabamento uniforme.",
@@ -197,6 +214,23 @@ const servicePages = {
       "Massa corrida e correções",
       "Selador e preparação",
       "Acabamento premium para drywall e alvenaria"
+    ],
+    gallery: [
+      { src: pinGaleria01, alt: "Apartamento em pintura — sala com proteção no piso e vista para a cidade" },
+      { src: pinGaleria02, alt: "Pintura interna de apartamento — corredor com proteção no piso" },
+      { src: pinGaleria03, alt: "Quarto com pintura branca e proteção de piso durante obra" },
+      { src: pinGaleria04, alt: "Sala ampla em pintura com proteção e vista para varanda" },
+      { src: pinGaleria05, alt: "Corredor com paredes pintadas e fita de proteção" },
+      { src: pinGaleria06, alt: "Ambiente finalizado com pintura branca e nicho em drywall" },
+      { src: pinGaleria07, alt: "Escritório com pintura cinza suave e forro modular" },
+      { src: pinGaleria08, alt: "Sala comercial com pintura cinza e janela de vidro" },
+      { src: pinGaleria09, alt: "Pintura cinza em ambiente comercial — vista lateral" },
+      { src: pinGaleria10, alt: "Detalhe de parede com pintura cinza e rodapé branco" },
+      { src: pinGaleria11, alt: "Ambiente comercial com pintura cinza e esquadria preta" },
+      { src: pinGaleria12, alt: "Parede pintada com janela de vidro e moldura preta" },
+      { src: pinGaleria13, alt: "Fachada de escritório em obra com pintura cinza" },
+      { src: pinGaleria14, alt: "Quarto com pintura branca e acabamento em sanca" },
+      { src: pinGaleria15, alt: "Detalhe de canto com pintura branca e sanca em drywall" },
     ]
   },
   "/forro-drywall-itapema": {
