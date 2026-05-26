@@ -76,12 +76,11 @@ import dwPainel03 from "../assets/dw-painel-03.jpg";
 import dwPainel04 from "../assets/dw-painel-04.jpg";
 import dwIsolamento01 from "../assets/dw-isolamento-01.jpg";
 
-// Projeto Estrutural — Bombinhas
-import bombinhasEstrutura from "../assets/bombinhas-estrutura.png";
-import bombinhasPlanta01 from "../assets/bombinhas-planta-01.png";
-import bombinhasPlanta02 from "../assets/bombinhas-planta-02.png";
-import bombinhasRender01 from "../assets/bombinhas-render-01.jpg";
-import bombinhasRender03 from "../assets/bombinhas-render-03.jpg";
+// Projeto Estrutural — pranchas técnicas
+import projEstCapa from "../assets/proj-est-capa.png";
+import projEstA02 from "../assets/proj-est-a02-vigas.png";
+import projEstA03 from "../assets/proj-est-a03-laje.png";
+import projEstA04 from "../assets/proj-est-a04-escada.png";
 
 // Galeria Steel Frame
 import sfGaleria01 from "../assets/sf-galeria-01.png";
@@ -362,7 +361,7 @@ const servicePages = {
     title: "Projeto, cálculo estrutural e compatibilização de Steel Frame em Itapema",
     description:
       "A Oppermann realiza o projeto completo de Steel Frame: cálculo estrutural, compatibilização entre sistemas, pranchas técnicas detalhadas e memorial de cálculo para obras em Itapema, Bombinhas, Balneário Camboriú e região.",
-    image: bombinhasEstrutura,
+    image: projEstCapa,
     keywords: "projeto steel frame Itapema, cálculo estrutural steel frame, compatibilização de projetos, pranchas técnicas steel frame, projeto estrutural Itapema",
     intro:
       "Além da execução, a Oppermann oferece o projeto completo de Steel Frame — do cálculo estrutural à compatibilização entre sistemas. Desenvolvemos projetos com precisão técnica, pranchas detalhadas e memorial de cálculo, entregando ao cliente um projeto pronto para aprovação e execução.",
@@ -382,11 +381,10 @@ const servicePages = {
       "Memorial de cálculo"
     ],
     gallery: [
-      { src: bombinhasEstrutura, alt: "Vista isométrica explodida da estrutura Steel Frame — Bombinhas/SC" },
-      { src: bombinhasPlanta01, alt: "Prancha técnica — planta baixa do projeto em Steel Frame" },
-      { src: bombinhasPlanta02, alt: "Prancha técnica — implantação do projeto" },
-      { src: bombinhasRender01, alt: "Renderização 3D do projeto — fachada frontal, Bombinhas/SC" },
-      { src: bombinhasRender03, alt: "Renderização 3D do projeto — vista diagonal, Bombinhas/SC" },
+      { src: projEstCapa,  alt: "Projeto Estrutural Steel Frame — residência unifamiliar, capa do projeto" },
+      { src: projEstA02,   alt: "Prancha A02 — Planta de Locação de Vigas, ESC 1/40" },
+      { src: projEstA03,   alt: "Prancha A03 — Planta de Locação de Laje, ESC 1/40" },
+      { src: projEstA04,   alt: "Prancha A04 — Planta de Locação de Escada com isométricas" },
     ]
   }
 };
