@@ -2,7 +2,7 @@ import { services } from "../data/siteContent.js";
 import { Icon } from "./Icon.jsx";
 import { SectionTitle } from "./SectionTitle.jsx";
 
-const iconNames = ["frame", "layers", "ceiling", "modular", "wall", "tile", "vinyl", "paint"];
+const iconNames = ["frame", "layers", "ceiling", "modular", "wall", "tile", "vinyl", "paint", "blueprint"];
 
 export function Services() {
   return (

@@ -72,6 +72,11 @@ export const services = [
     title: "Pintura interna e externa",
     description: "Pintura para áreas internas e externas com preparo correto, proteção das superfícies e visual superior.",
     url: "/pintura-premium-itapema"
+  },
+  {
+    title: "Projeto & Cálculo Estrutural",
+    description: "Projeto completo de Steel Frame com cálculo estrutural, compatibilização entre sistemas e pranchas técnicas detalhadas.",
+    url: "/projeto-estrutural-itapema"
   }
 ];
 

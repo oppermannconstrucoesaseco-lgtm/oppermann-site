@@ -6,7 +6,8 @@ const paths = {
   wall: "M4 5h16v14H4V5Zm0 5h16M10 5v5m4 0v9",
   tile: "M4 4h7v7H4V4Zm9 0h7v7h-7V4ZM4 13h7v7H4v-7Zm9 0h7v7h-7v-7Z",
   vinyl: "M3 7h18v2H3V7Zm0 4h18v2H3v-2Zm0 4h18v2H3v-2Z",
-  paint: "M4 5h10v6H4V5Zm8 6v3c0 1.1-.9 2-2 2H8v4m6-15h3c1.7 0 3 1.3 3 3s-1.3 3-3 3h-3"
+  paint: "M4 5h10v6H4V5Zm8 6v3c0 1.1-.9 2-2 2H8v4m6-15h3c1.7 0 3 1.3 3 3s-1.3 3-3 3h-3",
+  blueprint: "M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6Zm-1 1v5h5M8 13h8M8 17h5M8 9h2"
 };
 
 export function Icon({ name }) {

@@ -76,6 +76,13 @@ import dwPainel03 from "../assets/dw-painel-03.jpg";
 import dwPainel04 from "../assets/dw-painel-04.jpg";
 import dwIsolamento01 from "../assets/dw-isolamento-01.jpg";
 
+// Projeto Estrutural — Bombinhas
+import bombinhasEstrutura from "../assets/bombinhas-estrutura.png";
+import bombinhasPlanta01 from "../assets/bombinhas-planta-01.png";
+import bombinhasPlanta02 from "../assets/bombinhas-planta-02.png";
+import bombinhasRender01 from "../assets/bombinhas-render-01.jpg";
+import bombinhasRender03 from "../assets/bombinhas-render-03.jpg";
+
 // Galeria Steel Frame
 import sfGaleria01 from "../assets/sf-galeria-01.png";
 import sfGaleria02 from "../assets/sf-galeria-02.png";
@@ -348,6 +355,38 @@ const servicePages = {
       { src: pvGaleria04, alt: "Piso vinílico instalado — vista ampla com rodapé" },
       { src: pvGaleria05, alt: "Piso vinílico em escada — vista superior" },
       { src: pvGaleria06, alt: "Detalhe das escadas com piso vinílico em madeira" },
+    ]
+  },
+  "/projeto-estrutural-itapema": {
+    eyebrow: "Projeto Estrutural Steel Frame em Itapema",
+    title: "Projeto, cálculo estrutural e compatibilização de Steel Frame em Itapema",
+    description:
+      "A Oppermann realiza o projeto completo de Steel Frame: cálculo estrutural, compatibilização entre sistemas, pranchas técnicas detalhadas e memorial de cálculo para obras em Itapema, Bombinhas, Balneário Camboriú e região.",
+    image: bombinhasEstrutura,
+    keywords: "projeto steel frame Itapema, cálculo estrutural steel frame, compatibilização de projetos, pranchas técnicas steel frame, projeto estrutural Itapema",
+    intro:
+      "Além da execução, a Oppermann oferece o projeto completo de Steel Frame — do cálculo estrutural à compatibilização entre sistemas. Desenvolvemos projetos com precisão técnica, pranchas detalhadas e memorial de cálculo, entregando ao cliente um projeto pronto para aprovação e execução.",
+    benefits: [
+      "Projeto técnico completo com cálculo estrutural",
+      "Compatibilização entre estrutura, elétrica, hidráulica e ar-condicionado",
+      "Pranchas técnicas detalhadas para execução em campo",
+      "Vista isométrica explodida para visualização 3D da estrutura",
+      "Atendimento em Itapema, Bombinhas, Balneário Camboriú, Porto Belo e região"
+    ],
+    services: [
+      "Projeto de Steel Frame",
+      "Cálculo estrutural",
+      "Compatibilização de projetos",
+      "Pranchas técnicas e detalhamento",
+      "Vista isométrica explodida",
+      "Memorial de cálculo"
+    ],
+    gallery: [
+      { src: bombinhasEstrutura, alt: "Vista isométrica explodida da estrutura Steel Frame — Bombinhas/SC" },
+      { src: bombinhasPlanta01, alt: "Prancha técnica — planta baixa do projeto em Steel Frame" },
+      { src: bombinhasPlanta02, alt: "Prancha técnica — implantação do projeto" },
+      { src: bombinhasRender01, alt: "Renderização 3D do projeto — fachada frontal, Bombinhas/SC" },
+      { src: bombinhasRender03, alt: "Renderização 3D do projeto — vista diagonal, Bombinhas/SC" },
     ]
   }
 };
