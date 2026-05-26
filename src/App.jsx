@@ -11,12 +11,14 @@ import { WhatsAppButton } from "./components/WhatsAppButton.jsx";
 import { BeforeAfter } from "./components/BeforeAfter.jsx";
 import { PortfolioPage } from "./components/PortfolioPage.jsx";
 import { ContactPage } from "./components/ContactPage.jsx";
+import { ProjetosPage } from "./components/ProjetosPage.jsx";
 import { ServiceSeoPage, getServicePage } from "./components/ServiceSeoPage.jsx";
 
 export default function App() {
   const pathname = window.location.pathname.replace(/\/$/, "") || "/";
   const isPortfolioPage = pathname === "/portfolio";
   const isContactPage = pathname === "/contato";
+  const isProjetosPage = pathname === "/projetos";
   const servicePage = getServicePage(pathname);
 
   return (
@@ -27,6 +29,8 @@ export default function App() {
         <PortfolioPage />
       ) : isContactPage ? (
         <ContactPage />
+      ) : isProjetosPage ? (
+        <ProjetosPage />
       ) : servicePage ? (
         <ServiceSeoPage page={servicePage} />
       ) : (

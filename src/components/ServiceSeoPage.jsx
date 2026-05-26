@@ -9,6 +9,58 @@ import revestimentosImage from "../assets/servico-revestimentos.jpg";
 import forroModularImage from "../assets/obra-forro-modular-01.jpg";
 import pisoViniloImage from "../assets/obra-piso-vinilico-01.jpg";
 
+// Galeria Revestimentos
+import revGaleria01 from "../assets/rev-galeria-01.jpg";
+import revGaleria02 from "../assets/rev-galeria-02.jpg";
+import revGaleria03 from "../assets/rev-galeria-03.jpg";
+import revGaleria04 from "../assets/rev-galeria-04.jpg";
+import revGaleria05 from "../assets/rev-galeria-05.jpg";
+import revGaleria06 from "../assets/rev-galeria-06.jpg";
+import revGaleria07 from "../assets/rev-galeria-07.jpg";
+import revGaleria08 from "../assets/rev-galeria-08.jpg";
+
+// Galeria Pintura
+import pinGaleria01 from "../assets/pin-galeria-01.jpg";
+import pinGaleria02 from "../assets/pin-galeria-02.jpg";
+import pinGaleria03 from "../assets/pin-galeria-03.jpg";
+import pinGaleria04 from "../assets/pin-galeria-04.jpg";
+import pinGaleria05 from "../assets/pin-galeria-05.jpg";
+import pinGaleria06 from "../assets/pin-galeria-06.jpg";
+import pinGaleria07 from "../assets/pin-galeria-07.jpg";
+import pinGaleria08 from "../assets/pin-galeria-08.jpg";
+import pinGaleria09 from "../assets/pin-galeria-09.jpg";
+import pinGaleria10 from "../assets/pin-galeria-10.jpg";
+import pinGaleria11 from "../assets/pin-galeria-11.jpg";
+import pinGaleria12 from "../assets/pin-galeria-12.jpg";
+import pinGaleria13 from "../assets/pin-galeria-13.jpg";
+import pinGaleria14 from "../assets/pin-galeria-14.jpg";
+import pinGaleria15 from "../assets/pin-galeria-15.jpg";
+
+// Galeria Piso Vinílico
+import pvGaleria01 from "../assets/pv-galeria-01.png";
+import pvGaleria02 from "../assets/pv-galeria-02.png";
+import pvGaleria03 from "../assets/pv-galeria-03.png";
+import pvGaleria04 from "../assets/pv-galeria-04.png";
+import pvGaleria05 from "../assets/pv-galeria-05.png";
+import pvGaleria06 from "../assets/pv-galeria-06.png";
+
+// Galeria Forro Modular
+import fmGaleria01 from "../assets/fm-galeria-01.png";
+import fmGaleria02 from "../assets/fm-galeria-02.png";
+import fmGaleria03 from "../assets/fm-galeria-03.png";
+import fmGaleria04 from "../assets/fm-galeria-04.jpg";
+import fmGaleria05 from "../assets/fm-galeria-05.jpg";
+import fmGaleria06 from "../assets/fm-galeria-06.jpg";
+import fmGaleria07 from "../assets/fm-galeria-07.jpg";
+import fmGaleria08 from "../assets/fm-galeria-08.jpg";
+import fmGaleria09 from "../assets/fm-galeria-09.jpg";
+import fmGaleria10 from "../assets/fm-galeria-10.jpg";
+
+// Galeria Forro Drywall
+import forroDw01 from "../assets/forro-dw-01.png";
+import forroDw02 from "../assets/forro-dw-02.png";
+import forroDw03 from "../assets/forro-dw-03.png";
+
 // Galeria Drywall
 import dwEstrutura01 from "../assets/dw-estrutura-01.jpg";
 import dwEstrutura02 from "../assets/dw-estrutura-02.jpg";
@@ -24,17 +76,30 @@ import dwPainel03 from "../assets/dw-painel-03.jpg";
 import dwPainel04 from "../assets/dw-painel-04.jpg";
 import dwIsolamento01 from "../assets/dw-isolamento-01.jpg";
 
+// Projeto Estrutural — pranchas técnicas
+import projEstCapa from "../assets/proj-est-capa.png";
+import projEstA02 from "../assets/proj-est-a02-vigas.png";
+import projEstA03 from "../assets/proj-est-a03-laje.png";
+import projEstA04 from "../assets/proj-est-a04-escada.png";
+
 // Galeria Steel Frame
-import sfInterior01 from "../assets/sf-interior-01.jpg";
-import sfFachada01 from "../assets/sf-fachada-01.jpg";
-import sfFachada02 from "../assets/sf-fachada-02.jpg";
-import sfEscada01 from "../assets/sf-escada-01.jpg";
-import sfEstrutura01 from "../assets/sf-estrutura-01.jpg";
-import sfEstrutura02 from "../assets/sf-estrutura-02.jpg";
-import sfEstrutura03 from "../assets/sf-estrutura-03.jpg";
-import sfInterior02 from "../assets/sf-interior-02.jpg";
-import sfInterior03 from "../assets/sf-interior-03.jpg";
-import sfInterior04 from "../assets/sf-interior-04.jpg";
+import sfGaleria01 from "../assets/sf-galeria-01.png";
+import sfGaleria02 from "../assets/sf-galeria-02.png";
+import sfGaleria03 from "../assets/sf-galeria-03.png";
+import sfGaleria04 from "../assets/sf-galeria-04.png";
+import sfGaleria05 from "../assets/sf-galeria-05.png";
+import sfGaleria06 from "../assets/sf-galeria-06.png";
+import sfGaleria07 from "../assets/sf-galeria-07.png";
+import sfGaleria08 from "../assets/sf-galeria-08.png";
+import sfGaleria09 from "../assets/sf-galeria-09.png";
+import sfGaleria10 from "../assets/sf-galeria-10.png";
+import sfGaleria11 from "../assets/sf-galeria-11.png";
+import sfGaleria12 from "../assets/sf-galeria-12.png";
+import sfGaleria13 from "../assets/sf-galeria-13.png";
+import sfGaleria14 from "../assets/sf-galeria-14.png";
+import sfGaleria15 from "../assets/sf-galeria-15.png";
+import sfGaleria16 from "../assets/sf-galeria-16.png";
+import sfGaleria17 from "../assets/sf-galeria-17.png";
 
 const servicePages = {
   "/drywall-itapema": {
@@ -100,16 +165,23 @@ const servicePages = {
       "Integração com drywall, forros e pintura"
     ],
     gallery: [
-      { src: sfEscada01, alt: "Estrutura em steel frame com escada metálica" },
-      { src: sfEstrutura01, alt: "Estrutura metálica steel frame em galpão" },
-      { src: sfEstrutura02, alt: "Montagem da estrutura em steel frame" },
-      { src: sfEstrutura03, alt: "Piso em steel frame — perfis metálicos" },
-      { src: sfInterior01, alt: "Interior com fechamento em steel frame" },
-      { src: sfFachada01, alt: "Fachada com painéis em steel frame" },
-      { src: sfFachada02, alt: "Revestimento externo em steel frame" },
-      { src: sfInterior03, alt: "Espaço aberto com estrutura steel frame" },
-      { src: sfInterior04, alt: "Ambiente em obra com steel frame" },
-      { src: sfInterior02, alt: "Obra em steel frame com vista para a cidade" },
+      { src: sfGaleria01, alt: "Fachada em steel frame durante obras" },
+      { src: sfGaleria02, alt: "Detalhe da fachada em steel frame — ângulo vertical" },
+      { src: sfGaleria03, alt: "Fachada em steel frame com vista para o mar" },
+      { src: sfGaleria04, alt: "Perfis metálicos da estrutura steel frame na fachada" },
+      { src: sfGaleria05, alt: "Caixilharia em steel frame com ampla abertura" },
+      { src: sfGaleria06, alt: "Esquadria em steel frame com vista para o mar" },
+      { src: sfGaleria07, alt: "Edifício em construção com estrutura steel frame" },
+      { src: sfGaleria08, alt: "Fachada em acabamento com proteção durante obra" },
+      { src: sfGaleria09, alt: "Escada metálica em steel frame em construção" },
+      { src: sfGaleria10, alt: "Vista superior da escada em steel frame" },
+      { src: sfGaleria11, alt: "Estrutura de piso em steel frame em galpão" },
+      { src: sfGaleria12, alt: "Estrutura de piso em steel frame — vista em perspectiva" },
+      { src: sfGaleria13, alt: "Detalhe estrutural do piso em steel frame" },
+      { src: sfGaleria14, alt: "Piso em steel frame com fechamento parcial" },
+      { src: sfGaleria15, alt: "Interior do galpão em steel frame — estrutura concluída" },
+      { src: sfGaleria16, alt: "Piso concluído em galpão com estrutura steel frame" },
+      { src: sfGaleria17, alt: "Interior com divisórias em steel frame e vista para a cidade" },
     ]
   },
   "/construcao-a-seco-itapema": {
@@ -117,7 +189,7 @@ const servicePages = {
     title: "Construção a seco em Itapema com drywall, steel frame e acabamento premium",
     description:
       "Soluções completas em construção a seco para obras modernas, limpas e eficientes em Itapema, Balneário Camboriú e região.",
-    image: revestimentosImage,
+    image: revGaleria04,
     keywords: "construção a seco em Itapema, obras a seco, drywall e steel frame, construção moderna Itapema",
     intro:
       "A construção a seco une produtividade, precisão e organização de obra. Na Oppermann, aplicamos sistemas como drywall, steel frame, forros, revestimentos e pintura para entregar ambientes modernos e bem executados.",
@@ -134,6 +206,16 @@ const servicePages = {
       "Forros e paredes",
       "Revestimentos a seco",
       "Pintura interna e externa"
+    ],
+    gallery: [
+      { src: revGaleria01, alt: "Estrutura de drywall em obra com instalações elétricas e hidráulicas" },
+      { src: revGaleria02, alt: "Paredes de drywall com aplicação de massa e vista para o mar" },
+      { src: revGaleria03, alt: "Drywall verde (RU) em banheiro com nicho e janela" },
+      { src: revGaleria04, alt: "Quarto com drywall chapeado, forro coffered e janela ampla" },
+      { src: revGaleria05, alt: "Revestimento a seco com drywall e janela com vista para a cidade" },
+      { src: revGaleria06, alt: "Quarto com paredes e forro em drywall — acabamento de alto padrão" },
+      { src: revGaleria07, alt: "Paredes de drywall chapeadas com instalações aparentes" },
+      { src: revGaleria08, alt: "Revestimento com Aquapanel em banheiro com nichos" },
     ]
   },
   "/pintura-premium-itapema": {
@@ -141,7 +223,7 @@ const servicePages = {
     title: "Pintura premium em Itapema com preparo correto e acabamento superior",
     description:
       "Serviços de pintura interna e externa com preparação de superfície, massa, selador e acabamento de alto padrão em Itapema e região.",
-    image: pinturaImage,
+    image: pinGaleria06,
     keywords: "pintura premium em Itapema, pintura residencial Itapema, pintura interna e externa, acabamento premium",
     intro:
       "A pintura é a etapa que revela a qualidade final da obra. Por isso, trabalhamos com preparação correta da superfície, proteção dos ambientes, aplicação técnica e acabamento uniforme.",
@@ -158,6 +240,23 @@ const servicePages = {
       "Massa corrida e correções",
       "Selador e preparação",
       "Acabamento premium para drywall e alvenaria"
+    ],
+    gallery: [
+      { src: pinGaleria01, alt: "Apartamento em pintura — sala com proteção no piso e vista para a cidade" },
+      { src: pinGaleria02, alt: "Pintura interna de apartamento — corredor com proteção no piso" },
+      { src: pinGaleria03, alt: "Quarto com pintura branca e proteção de piso durante obra" },
+      { src: pinGaleria04, alt: "Sala ampla em pintura com proteção e vista para varanda" },
+      { src: pinGaleria05, alt: "Corredor com paredes pintadas e fita de proteção" },
+      { src: pinGaleria06, alt: "Ambiente finalizado com pintura branca e nicho em drywall" },
+      { src: pinGaleria07, alt: "Escritório com pintura cinza suave e forro modular" },
+      { src: pinGaleria08, alt: "Sala comercial com pintura cinza e janela de vidro" },
+      { src: pinGaleria09, alt: "Pintura cinza em ambiente comercial — vista lateral" },
+      { src: pinGaleria10, alt: "Detalhe de parede com pintura cinza e rodapé branco" },
+      { src: pinGaleria11, alt: "Ambiente comercial com pintura cinza e esquadria preta" },
+      { src: pinGaleria12, alt: "Parede pintada com janela de vidro e moldura preta" },
+      { src: pinGaleria13, alt: "Fachada de escritório em obra com pintura cinza" },
+      { src: pinGaleria14, alt: "Quarto com pintura branca e acabamento em sanca" },
+      { src: pinGaleria15, alt: "Detalhe de canto com pintura branca e sanca em drywall" },
     ]
   },
   "/forro-drywall-itapema": {
@@ -165,7 +264,7 @@ const servicePages = {
     title: "Forro de drywall em Itapema com nivelamento, precisão e acabamento premium",
     description:
       "Execução de forros em drywall para residências, apartamentos, salas comerciais e obras corporativas em Itapema e região.",
-    image: drywallImage,
+    image: forroDw03,
     keywords: "forro de drywall em Itapema, forro drywall Itapema, forro de gesso acartonado, cortineiro drywall",
     intro:
       "O forro em drywall permite acabamento moderno, integração com iluminação, cortineiros, sancas e soluções técnicas para ambientes residenciais e comerciais.",
@@ -182,6 +281,11 @@ const servicePages = {
       "Rebaixamento de teto",
       "Detalhes para iluminação",
       "Manutenção e adequações em forros existentes"
+    ],
+    gallery: [
+      { src: forroDw01, alt: "Forro coffered em drywall durante execução" },
+      { src: forroDw02, alt: "Forro de drywall com recortes e detalhes em andamento" },
+      { src: forroDw03, alt: "Forro em drywall com sancas — vista geral do ambiente" },
     ]
   },
   "/forro-modular-itapema": {
@@ -189,7 +293,7 @@ const servicePages = {
     title: "Forro Modular em Itapema com acabamento de alto padrão para ambientes modernos",
     description:
       "Instalação de forro modular para ambientes comerciais e residenciais em Itapema e região. Execução técnica, nivelamento preciso e acabamento superior.",
-    image: forroModularImage,
+    image: fmGaleria03,
     keywords: "forro modular em Itapema, forro modular Itapema, forro modular comercial, instalação forro modular",
     intro:
       "O forro modular é a solução ideal para ambientes comerciais, corporativos e residenciais que exigem acabamento refinado, facilidade de manutenção e visual moderno. A Oppermann executa com alinhamento técnico e resultado de alto padrão.",
@@ -206,6 +310,18 @@ const servicePages = {
       "Integração com iluminação e ar-condicionado",
       "Forro modular para ambientes comerciais",
       "Forro modular para residências de alto padrão"
+    ],
+    gallery: [
+      { src: fmGaleria01, alt: "Forro modular com iluminação embutida em ambiente comercial" },
+      { src: fmGaleria02, alt: "Forro modular branco com luminária integrada" },
+      { src: fmGaleria03, alt: "Sala comercial com forro modular e piso vinílico" },
+      { src: fmGaleria04, alt: "Forro modular instalado em sala em construção" },
+      { src: fmGaleria05, alt: "Detalhe do forro modular com painel de iluminação" },
+      { src: fmGaleria06, alt: "Forro modular com iluminação integrada e janela lateral" },
+      { src: fmGaleria07, alt: "Forro modular em ambiente comercial com ar-condicionado" },
+      { src: fmGaleria08, alt: "Vista do canto — forro modular com iluminação" },
+      { src: fmGaleria09, alt: "Loja com forro modular instalado e portão frontal" },
+      { src: fmGaleria10, alt: "Ambiente em acabamento com forro modular concluído" },
     ]
   },
   "/piso-vinilico-itapema": {
@@ -213,7 +329,7 @@ const servicePages = {
     title: "Piso Vinílico em Itapema com instalação técnica e acabamento de alto padrão",
     description:
       "Instalação de piso vinílico para ambientes residenciais e comerciais em Itapema e região. Execução limpa, rápida e com resultado elegante.",
-    image: pisoViniloImage,
+    image: pvGaleria01,
     keywords: "piso vinílico em Itapema, instalação piso vinílico Itapema, piso vinílico residencial, piso vinílico comercial Itapema",
     intro:
       "O piso vinílico combina estética, praticidade e durabilidade. Com acabamento que imita madeira e outros materiais nobres, é ideal para quem busca resultado elegante com instalação limpa e rápida. A Oppermann instala com alinhamento preciso e acabamento superior.",
@@ -230,6 +346,45 @@ const servicePages = {
       "Instalação sobre contrapiso e porcelanato",
       "Rodapé e acabamentos",
       "Piso vinílico para ambientes comerciais e residenciais"
+    ],
+    gallery: [
+      { src: pvGaleria01, alt: "Piso vinílico madeira instalado com rodapé — vista de canto" },
+      { src: pvGaleria02, alt: "Piso vinílico com acabamento brilhante em ambiente residencial" },
+      { src: pvGaleria03, alt: "Detalhe do piso vinílico com rodapé branco" },
+      { src: pvGaleria04, alt: "Piso vinílico instalado — vista ampla com rodapé" },
+      { src: pvGaleria05, alt: "Piso vinílico em escada — vista superior" },
+      { src: pvGaleria06, alt: "Detalhe das escadas com piso vinílico em madeira" },
+    ]
+  },
+  "/projeto-estrutural-itapema": {
+    eyebrow: "Projeto Estrutural Steel Frame em Itapema",
+    title: "Projeto, cálculo estrutural e compatibilização de Steel Frame em Itapema",
+    description:
+      "A Oppermann realiza o projeto completo de Steel Frame: cálculo estrutural, compatibilização entre sistemas, pranchas técnicas detalhadas e memorial de cálculo para obras em Itapema, Bombinhas, Balneário Camboriú e região.",
+    image: projEstCapa,
+    keywords: "projeto steel frame Itapema, cálculo estrutural steel frame, compatibilização de projetos, pranchas técnicas steel frame, projeto estrutural Itapema",
+    intro:
+      "Além da execução, a Oppermann oferece o projeto completo de Steel Frame — do cálculo estrutural à compatibilização entre sistemas. Desenvolvemos projetos com precisão técnica, pranchas detalhadas e memorial de cálculo, entregando ao cliente um projeto pronto para aprovação e execução.",
+    benefits: [
+      "Projeto técnico completo com cálculo estrutural",
+      "Compatibilização entre estrutura, elétrica, hidráulica e ar-condicionado",
+      "Pranchas técnicas detalhadas para execução em campo",
+      "Vista isométrica explodida para visualização 3D da estrutura",
+      "Atendimento em Itapema, Bombinhas, Balneário Camboriú, Porto Belo e região"
+    ],
+    services: [
+      "Projeto de Steel Frame",
+      "Cálculo estrutural",
+      "Compatibilização de projetos",
+      "Pranchas técnicas e detalhamento",
+      "Vista isométrica explodida",
+      "Memorial de cálculo"
+    ],
+    gallery: [
+      { src: projEstCapa,  alt: "Projeto Estrutural Steel Frame — residência unifamiliar, capa do projeto" },
+      { src: projEstA02,   alt: "Prancha A02 — Planta de Locação de Vigas, ESC 1/40" },
+      { src: projEstA03,   alt: "Prancha A03 — Planta de Locação de Laje, ESC 1/40" },
+      { src: projEstA04,   alt: "Prancha A04 — Planta de Locação de Escada com isométricas" },
     ]
   }
 };
