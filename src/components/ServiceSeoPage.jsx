@@ -9,6 +9,18 @@ import revestimentosImage from "../assets/servico-revestimentos.jpg";
 import forroModularImage from "../assets/obra-forro-modular-01.jpg";
 import pisoViniloImage from "../assets/obra-piso-vinilico-01.jpg";
 
+// Galeria Forro Modular
+import fmGaleria01 from "../assets/fm-galeria-01.png";
+import fmGaleria02 from "../assets/fm-galeria-02.png";
+import fmGaleria03 from "../assets/fm-galeria-03.png";
+import fmGaleria04 from "../assets/fm-galeria-04.jpg";
+import fmGaleria05 from "../assets/fm-galeria-05.jpg";
+import fmGaleria06 from "../assets/fm-galeria-06.jpg";
+import fmGaleria07 from "../assets/fm-galeria-07.jpg";
+import fmGaleria08 from "../assets/fm-galeria-08.jpg";
+import fmGaleria09 from "../assets/fm-galeria-09.jpg";
+import fmGaleria10 from "../assets/fm-galeria-10.jpg";
+
 // Galeria Forro Drywall
 import forroDw01 from "../assets/forro-dw-01.png";
 import forroDw02 from "../assets/forro-dw-02.png";
@@ -213,7 +225,7 @@ const servicePages = {
     title: "Forro Modular em Itapema com acabamento de alto padrão para ambientes modernos",
     description:
       "Instalação de forro modular para ambientes comerciais e residenciais em Itapema e região. Execução técnica, nivelamento preciso e acabamento superior.",
-    image: forroModularImage,
+    image: fmGaleria03,
     keywords: "forro modular em Itapema, forro modular Itapema, forro modular comercial, instalação forro modular",
     intro:
       "O forro modular é a solução ideal para ambientes comerciais, corporativos e residenciais que exigem acabamento refinado, facilidade de manutenção e visual moderno. A Oppermann executa com alinhamento técnico e resultado de alto padrão.",
@@ -230,6 +242,18 @@ const servicePages = {
       "Integração com iluminação e ar-condicionado",
       "Forro modular para ambientes comerciais",
       "Forro modular para residências de alto padrão"
+    ],
+    gallery: [
+      { src: fmGaleria01, alt: "Forro modular com iluminação embutida em ambiente comercial" },
+      { src: fmGaleria02, alt: "Forro modular branco com luminária integrada" },
+      { src: fmGaleria03, alt: "Sala comercial com forro modular e piso vinílico" },
+      { src: fmGaleria04, alt: "Forro modular instalado em sala em construção" },
+      { src: fmGaleria05, alt: "Detalhe do forro modular com painel de iluminação" },
+      { src: fmGaleria06, alt: "Forro modular com iluminação integrada e janela lateral" },
+      { src: fmGaleria07, alt: "Forro modular em ambiente comercial com ar-condicionado" },
+      { src: fmGaleria08, alt: "Vista do canto — forro modular com iluminação" },
+      { src: fmGaleria09, alt: "Loja com forro modular instalado e portão frontal" },
+      { src: fmGaleria10, alt: "Ambiente em acabamento com forro modular concluído" },
     ]
   },
   "/piso-vinilico-itapema": {
