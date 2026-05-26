@@ -9,6 +9,21 @@ import revestimentosImage from "../assets/servico-revestimentos.jpg";
 import forroModularImage from "../assets/obra-forro-modular-01.jpg";
 import pisoViniloImage from "../assets/obra-piso-vinilico-01.jpg";
 
+// Galeria Drywall
+import dwEstrutura01 from "../assets/dw-estrutura-01.jpg";
+import dwEstrutura02 from "../assets/dw-estrutura-02.jpg";
+import dwEstrutura03 from "../assets/dw-estrutura-03.jpg";
+import dwEstrutura04 from "../assets/dw-estrutura-04.jpg";
+import dwEstrutura05 from "../assets/dw-estrutura-05.jpg";
+import dwCorredor01 from "../assets/dw-corredor-01.jpg";
+import dwCorredor02 from "../assets/dw-corredor-02.jpg";
+import dwCorredor03 from "../assets/dw-corredor-03.jpg";
+import dwPainel01 from "../assets/dw-painel-01.jpg";
+import dwPainel02 from "../assets/dw-painel-02.jpg";
+import dwPainel03 from "../assets/dw-painel-03.jpg";
+import dwPainel04 from "../assets/dw-painel-04.jpg";
+import dwIsolamento01 from "../assets/dw-isolamento-01.jpg";
+
 // Galeria Steel Frame
 import sfInterior01 from "../assets/sf-interior-01.jpg";
 import sfFachada01 from "../assets/sf-fachada-01.jpg";
@@ -44,6 +59,21 @@ const servicePages = {
       "Fechamentos técnicos",
       "Sancas, cortineiros e detalhes",
       "Revestimentos internos em drywall"
+    ],
+    gallery: [
+      { src: dwEstrutura04, alt: "Estrutura metálica de drywall com instalações" },
+      { src: dwEstrutura01, alt: "Perfis metálicos para paredes de drywall" },
+      { src: dwCorredor01, alt: "Corredor com estrutura de drywall" },
+      { src: dwEstrutura02, alt: "Estrutura de drywall em obra" },
+      { src: dwPainel01, alt: "Painéis de drywall instalados" },
+      { src: dwPainel02, alt: "Drywall com janela — vista para a cidade" },
+      { src: dwEstrutura03, alt: "Montagem de estrutura metálica drywall" },
+      { src: dwPainel03, alt: "Corredor com paredes de drywall" },
+      { src: dwIsolamento01, alt: "Isolamento acústico em parede de drywall" },
+      { src: dwEstrutura05, alt: "Perfis metálicos para drywall com instalações" },
+      { src: dwPainel04, alt: "Parede de drywall com caixas de instalação" },
+      { src: dwCorredor02, alt: "Corredor de drywall em andamento" },
+      { src: dwCorredor03, alt: "Paredes de drywall em corredor" },
     ]
   },
   "/steel-frame-itapema": {
