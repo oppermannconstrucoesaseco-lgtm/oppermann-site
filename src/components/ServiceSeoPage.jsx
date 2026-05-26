@@ -9,6 +9,14 @@ import revestimentosImage from "../assets/servico-revestimentos.jpg";
 import forroModularImage from "../assets/obra-forro-modular-01.jpg";
 import pisoViniloImage from "../assets/obra-piso-vinilico-01.jpg";
 
+// Galeria Piso Vinílico
+import pvGaleria01 from "../assets/pv-galeria-01.png";
+import pvGaleria02 from "../assets/pv-galeria-02.png";
+import pvGaleria03 from "../assets/pv-galeria-03.png";
+import pvGaleria04 from "../assets/pv-galeria-04.png";
+import pvGaleria05 from "../assets/pv-galeria-05.png";
+import pvGaleria06 from "../assets/pv-galeria-06.png";
+
 // Galeria Forro Modular
 import fmGaleria01 from "../assets/fm-galeria-01.png";
 import fmGaleria02 from "../assets/fm-galeria-02.png";
@@ -261,7 +269,7 @@ const servicePages = {
     title: "Piso Vinílico em Itapema com instalação técnica e acabamento de alto padrão",
     description:
       "Instalação de piso vinílico para ambientes residenciais e comerciais em Itapema e região. Execução limpa, rápida e com resultado elegante.",
-    image: pisoViniloImage,
+    image: pvGaleria01,
     keywords: "piso vinílico em Itapema, instalação piso vinílico Itapema, piso vinílico residencial, piso vinílico comercial Itapema",
     intro:
       "O piso vinílico combina estética, praticidade e durabilidade. Com acabamento que imita madeira e outros materiais nobres, é ideal para quem busca resultado elegante com instalação limpa e rápida. A Oppermann instala com alinhamento preciso e acabamento superior.",
@@ -278,6 +286,14 @@ const servicePages = {
       "Instalação sobre contrapiso e porcelanato",
       "Rodapé e acabamentos",
       "Piso vinílico para ambientes comerciais e residenciais"
+    ],
+    gallery: [
+      { src: pvGaleria01, alt: "Piso vinílico madeira instalado com rodapé — vista de canto" },
+      { src: pvGaleria02, alt: "Piso vinílico com acabamento brilhante em ambiente residencial" },
+      { src: pvGaleria03, alt: "Detalhe do piso vinílico com rodapé branco" },
+      { src: pvGaleria04, alt: "Piso vinílico instalado — vista ampla com rodapé" },
+      { src: pvGaleria05, alt: "Piso vinílico em escada — vista superior" },
+      { src: pvGaleria06, alt: "Detalhe das escadas com piso vinílico em madeira" },
     ]
   }
 };
