@@ -9,6 +9,11 @@ import revestimentosImage from "../assets/servico-revestimentos.jpg";
 import forroModularImage from "../assets/obra-forro-modular-01.jpg";
 import pisoViniloImage from "../assets/obra-piso-vinilico-01.jpg";
 
+// Galeria Forro Drywall
+import forroDw01 from "../assets/forro-dw-01.png";
+import forroDw02 from "../assets/forro-dw-02.png";
+import forroDw03 from "../assets/forro-dw-03.png";
+
 // Galeria Drywall
 import dwEstrutura01 from "../assets/dw-estrutura-01.jpg";
 import dwEstrutura02 from "../assets/dw-estrutura-02.jpg";
@@ -179,7 +184,7 @@ const servicePages = {
     title: "Forro de drywall em Itapema com nivelamento, precisão e acabamento premium",
     description:
       "Execução de forros em drywall para residências, apartamentos, salas comerciais e obras corporativas em Itapema e região.",
-    image: drywallImage,
+    image: forroDw03,
     keywords: "forro de drywall em Itapema, forro drywall Itapema, forro de gesso acartonado, cortineiro drywall",
     intro:
       "O forro em drywall permite acabamento moderno, integração com iluminação, cortineiros, sancas e soluções técnicas para ambientes residenciais e comerciais.",
@@ -196,6 +201,11 @@ const servicePages = {
       "Rebaixamento de teto",
       "Detalhes para iluminação",
       "Manutenção e adequações em forros existentes"
+    ],
+    gallery: [
+      { src: forroDw01, alt: "Forro coffered em drywall durante execução" },
+      { src: forroDw02, alt: "Forro de drywall com recortes e detalhes em andamento" },
+      { src: forroDw03, alt: "Forro em drywall com sancas — vista geral do ambiente" },
     ]
   },
   "/forro-modular-itapema": {
