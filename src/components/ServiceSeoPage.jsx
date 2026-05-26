@@ -25,16 +25,23 @@ import dwPainel04 from "../assets/dw-painel-04.jpg";
 import dwIsolamento01 from "../assets/dw-isolamento-01.jpg";
 
 // Galeria Steel Frame
-import sfInterior01 from "../assets/sf-interior-01.jpg";
-import sfFachada01 from "../assets/sf-fachada-01.jpg";
-import sfFachada02 from "../assets/sf-fachada-02.jpg";
-import sfEscada01 from "../assets/sf-escada-01.jpg";
-import sfEstrutura01 from "../assets/sf-estrutura-01.jpg";
-import sfEstrutura02 from "../assets/sf-estrutura-02.jpg";
-import sfEstrutura03 from "../assets/sf-estrutura-03.jpg";
-import sfInterior02 from "../assets/sf-interior-02.jpg";
-import sfInterior03 from "../assets/sf-interior-03.jpg";
-import sfInterior04 from "../assets/sf-interior-04.jpg";
+import sfGaleria01 from "../assets/sf-galeria-01.png";
+import sfGaleria02 from "../assets/sf-galeria-02.png";
+import sfGaleria03 from "../assets/sf-galeria-03.png";
+import sfGaleria04 from "../assets/sf-galeria-04.png";
+import sfGaleria05 from "../assets/sf-galeria-05.png";
+import sfGaleria06 from "../assets/sf-galeria-06.png";
+import sfGaleria07 from "../assets/sf-galeria-07.png";
+import sfGaleria08 from "../assets/sf-galeria-08.png";
+import sfGaleria09 from "../assets/sf-galeria-09.png";
+import sfGaleria10 from "../assets/sf-galeria-10.png";
+import sfGaleria11 from "../assets/sf-galeria-11.png";
+import sfGaleria12 from "../assets/sf-galeria-12.png";
+import sfGaleria13 from "../assets/sf-galeria-13.png";
+import sfGaleria14 from "../assets/sf-galeria-14.png";
+import sfGaleria15 from "../assets/sf-galeria-15.png";
+import sfGaleria16 from "../assets/sf-galeria-16.png";
+import sfGaleria17 from "../assets/sf-galeria-17.png";
 
 const servicePages = {
   "/drywall-itapema": {
@@ -100,16 +107,23 @@ const servicePages = {
       "Integração com drywall, forros e pintura"
     ],
     gallery: [
-      { src: sfEscada01, alt: "Estrutura em steel frame com escada metálica" },
-      { src: sfEstrutura01, alt: "Estrutura metálica steel frame em galpão" },
-      { src: sfEstrutura02, alt: "Montagem da estrutura em steel frame" },
-      { src: sfEstrutura03, alt: "Piso em steel frame — perfis metálicos" },
-      { src: sfInterior01, alt: "Interior com fechamento em steel frame" },
-      { src: sfFachada01, alt: "Fachada com painéis em steel frame" },
-      { src: sfFachada02, alt: "Revestimento externo em steel frame" },
-      { src: sfInterior03, alt: "Espaço aberto com estrutura steel frame" },
-      { src: sfInterior04, alt: "Ambiente em obra com steel frame" },
-      { src: sfInterior02, alt: "Obra em steel frame com vista para a cidade" },
+      { src: sfGaleria01, alt: "Fachada em steel frame durante obras" },
+      { src: sfGaleria02, alt: "Detalhe da fachada em steel frame — ângulo vertical" },
+      { src: sfGaleria03, alt: "Fachada em steel frame com vista para o mar" },
+      { src: sfGaleria04, alt: "Perfis metálicos da estrutura steel frame na fachada" },
+      { src: sfGaleria05, alt: "Caixilharia em steel frame com ampla abertura" },
+      { src: sfGaleria06, alt: "Esquadria em steel frame com vista para o mar" },
+      { src: sfGaleria07, alt: "Edifício em construção com estrutura steel frame" },
+      { src: sfGaleria08, alt: "Fachada em acabamento com proteção durante obra" },
+      { src: sfGaleria09, alt: "Escada metálica em steel frame em construção" },
+      { src: sfGaleria10, alt: "Vista superior da escada em steel frame" },
+      { src: sfGaleria11, alt: "Estrutura de piso em steel frame em galpão" },
+      { src: sfGaleria12, alt: "Estrutura de piso em steel frame — vista em perspectiva" },
+      { src: sfGaleria13, alt: "Detalhe estrutural do piso em steel frame" },
+      { src: sfGaleria14, alt: "Piso em steel frame com fechamento parcial" },
+      { src: sfGaleria15, alt: "Interior do galpão em steel frame — estrutura concluída" },
+      { src: sfGaleria16, alt: "Piso concluído em galpão com estrutura steel frame" },
+      { src: sfGaleria17, alt: "Interior com divisórias em steel frame e vista para a cidade" },
     ]
   },
   "/construcao-a-seco-itapema": {
