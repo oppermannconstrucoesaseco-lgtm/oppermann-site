@@ -5,6 +5,7 @@ import { Services } from "./components/Services.jsx";
 import { Differentials } from "./components/Differentials.jsx";
 import { Gallery } from "./components/Gallery.jsx";
 import { CommercialCall } from "./components/CommercialCall.jsx";
+import { Faq } from "./components/Faq.jsx";
 import { Contact } from "./components/Contact.jsx";
 import { Footer } from "./components/Footer.jsx";
 import { WhatsAppButton } from "./components/WhatsAppButton.jsx";
@@ -42,6 +43,7 @@ export default function App() {
           <BeforeAfter />
           <Differentials />
           <CommercialCall />
+          <Faq />
           <Contact />
         </main>
       )}
