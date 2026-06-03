@@ -43,7 +43,7 @@ export function Contact() {
       <div className="container contact-grid">
         <div>
           <SectionTitle eyebrow="Contato" title="Vamos falar sobre sua obra?">
-            Envie uma mensagem para receber atendimento comercial com Michel e iniciar seu
+            Envie uma mensagem para receber atendimento comercial com nossa equipe e iniciar seu
             orçamento.
           </SectionTitle>
           <div className="contact-info">
@@ -57,7 +57,7 @@ export function Contact() {
           </div>
           <div className="contact-actions">
             <a className="btn btn-primary" href={getWhatsAppUrl()} target="_blank" rel="noreferrer">
-              Falar com Michel
+              Falar com nosso consultor
             </a>
             <a className="btn btn-ghost" href={getMailToUrl()}>
               Enviar e-mail

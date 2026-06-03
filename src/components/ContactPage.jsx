@@ -72,7 +72,7 @@ export function ContactPage() {
           <div>
             <h2 className="contact-page-title">Vamos falar sobre sua obra?</h2>
             <p className="contact-page-sub">
-              Envie sua solicitação pelo formulário ao lado e Michel entrará em contato para
+              Envie sua solicitação pelo formulário ao lado e nossa equipe entrará em contato para
               iniciar seu orçamento.
             </p>
 
@@ -86,7 +86,7 @@ export function ContactPage() {
 
             <div className="contact-actions">
               <a className="btn btn-primary" href={getWhatsAppUrl()} target="_blank" rel="noreferrer">
-                Falar com Michel
+                Falar com nosso consultor
               </a>
               <a className="btn btn-ghost" href={getMailToUrl()}>
                 Enviar e-mail
