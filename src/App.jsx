@@ -5,6 +5,7 @@ import { Services } from "./components/Services.jsx";
 import { Differentials } from "./components/Differentials.jsx";
 import { Gallery } from "./components/Gallery.jsx";
 import { Stats } from "./components/Stats.jsx";
+import { Clients } from "./components/Clients.jsx";
 import { CommercialCall } from "./components/CommercialCall.jsx";
 import { Faq } from "./components/Faq.jsx";
 import { Contact } from "./components/Contact.jsx";
@@ -40,6 +41,7 @@ export default function App() {
           <Hero />
           <About />
           <Stats />
+          <Clients />
           <Services />
           <Gallery />
           <BeforeAfter />
