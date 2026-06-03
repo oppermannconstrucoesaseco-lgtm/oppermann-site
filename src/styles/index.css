@@ -105,7 +105,7 @@ textarea {
   align-items: center;
   justify-content: center;
   flex: 0 0 auto;
-  height: 56px;
+  height: 68px;
   min-width: max-content;
   margin: 0;
   transform: none;
@@ -115,7 +115,7 @@ textarea {
 .brand img {
   display: block;
   width: auto;
-  height: 56px;
+  height: 68px;
   max-width: none;
   max-height: none;
   margin: 0;
@@ -468,7 +468,7 @@ body:has(#contato:target) .site-nav a[href="#contato"]::after {
   display: grid;
   align-items: end;
   min-height: 100svh;
-  padding: 170px clamp(18px, 5vw, 76px) 54px;
+  padding: 108px clamp(18px, 5vw, 76px) 54px;
   overflow: hidden;
   background-position: center;
   background-size: cover;
@@ -496,7 +496,7 @@ body:has(#contato:target) .site-nav a[href="#contato"]::after {
 .hero-watermark {
   position: absolute;
   right: clamp(28px, 7vw, 110px);
-  top: 56%;
+  top: 44%;
   z-index: 0;
   width: min(38vw, 560px);
   height: auto;
@@ -1574,12 +1574,12 @@ body:has(#contato:target) .site-nav a[href="#contato"]::after {
   }
 
   .brand {
-    height: 56px;
+    height: 64px;
     overflow: visible;
   }
 
   .brand img {
-    height: 56px;
+    height: 64px;
   }
 
   .about-grid,
@@ -1631,12 +1631,12 @@ body:has(#contato:target) .site-nav a[href="#contato"]::after {
   }
 
   .brand {
-    height: 50px;
+    height: 54px;
     overflow: visible;
   }
 
   .brand img {
-    height: 50px;
+    height: 54px;
   }
 
   .header-contact {
@@ -1652,13 +1652,13 @@ body:has(#contato:target) .site-nav a[href="#contato"]::after {
 
   .hero {
     min-height: 96svh;
-    padding-top: 124px;
+    padding-top: 100px;
     padding-bottom: 34px;
   }
 
   .hero-watermark {
     right: -24px;
-    top: 58%;
+    top: 42%;
     width: 74vw;
     opacity: 0.09;
   }
