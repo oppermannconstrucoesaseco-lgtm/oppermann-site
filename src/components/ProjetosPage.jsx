@@ -38,6 +38,8 @@ export function ProjetosPage() {
     document.title = "Projetos em Andamento | Oppermann Construção a Seco";
     const meta = document.querySelector('meta[name="description"]');
     if (meta) meta.setAttribute("content", "Acompanhe os projetos que a Oppermann está executando e os próximos que entram em obra. Steel Frame, Drywall e Construção a Seco em Itapema e região.");
+    const canonical = document.querySelector('link[rel="canonical"]');
+    if (canonical) canonical.setAttribute("href", "https://oppermannsteel.com.br/projetos");
   }, []);
 
   useEffect(() => {

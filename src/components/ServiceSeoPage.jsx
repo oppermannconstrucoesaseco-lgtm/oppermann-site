@@ -403,6 +403,9 @@ export function ServiceSeoPage({ page }) {
 
     const keywords = document.querySelector('meta[name="keywords"]');
     if (keywords) keywords.setAttribute("content", page.keywords);
+
+    const canonical = document.querySelector('link[rel="canonical"]');
+    if (canonical) canonical.setAttribute("href", `https://oppermannsteel.com.br${window.location.pathname}`);
   }, [page]);
 
   return (

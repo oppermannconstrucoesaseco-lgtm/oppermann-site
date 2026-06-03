@@ -30,6 +30,8 @@ const originalPortfolioPages = [
 export function PortfolioPage() {
   useEffect(() => {
     document.title = "Portfólio Oppermann | Obras reais de alto padrão";
+    const canonical = document.querySelector('link[rel="canonical"]');
+    if (canonical) canonical.setAttribute("href", "https://oppermannsteel.com.br/portfolio");
   }, []);
 
   return (
