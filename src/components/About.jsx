@@ -7,15 +7,14 @@ export function About() {
       <div className="container about-grid">
         <div>
           <SectionTitle eyebrow="Quem somos" title="Especialistas em construção moderna">
-            A OPPERMANN CONSTRUCAO A SECO LTDA atua com soluções técnicas para obras mais
-            rápidas, limpas e eficientes, unindo organização, compromisso e acabamento de alto
-            padrão.
+            Com mais de 20 anos de experiência no setor — 15 deles em Curitiba, um dos mercados
+            mais exigentes do país — a Oppermann chegou ao litoral de Santa Catarina trazendo
+            o mesmo padrão técnico de alto nível.
           </SectionTitle>
           <p>
-            Com base em {company.baseCity}, a empresa atende clientes que buscam uma execução
-            profissional em steel frame, drywall, revestimentos, pintura e acabamentos da
-            construção. Cada etapa é conduzida com atenção ao planejamento, qualidade dos detalhes
-            e respeito ao prazo combinado.
+            Com base em {company.baseCity}, atendemos clientes que buscam execução profissional
+            em steel frame, drywall, revestimentos, pintura e acabamentos. Cada etapa é conduzida
+            com atenção ao planejamento, qualidade dos detalhes e respeito ao prazo combinado.
           </p>
           <p>
             O resultado é uma obra mais inteligente: menos improviso, mais controle, ambientes bem
