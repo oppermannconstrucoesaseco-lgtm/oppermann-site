@@ -9,6 +9,8 @@ export function ContactPage() {
     document.title = "Contato | OPPERMANN Construção a Seco — Orçamento em Itapema";
     const desc = document.querySelector('meta[name="description"]');
     if (desc) desc.setAttribute("content", "Entre em contato com a OPPERMANN Construção a Seco. Solicite um orçamento para drywall, steel frame, forros, revestimentos e pintura em Itapema e região.");
+    const canonical = document.querySelector('link[rel="canonical"]');
+    if (canonical) canonical.setAttribute("href", "https://oppermannsteel.com.br/contato");
   }, []);
 
   function handleSubmit(event) {

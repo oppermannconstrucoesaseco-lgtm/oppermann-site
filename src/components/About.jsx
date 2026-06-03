@@ -23,7 +23,7 @@ export function About() {
           </p>
         </div>
         <figure className="about-image">
-          <img src={images.about} alt="Estrutura steel frame organizada para construção a seco" />
+          <img src={images.about} alt="Estrutura steel frame organizada para construção a seco" loading="lazy" />
           <figcaption>Precisão técnica para obras de alto padrão</figcaption>
         </figure>
       </div>

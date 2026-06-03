@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.oppermannsteel.com.br/sitemap.xml
+Sitemap: https://oppermannsteel.com.br/sitemap.xml
