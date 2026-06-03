@@ -11,7 +11,7 @@ export function Gallery() {
         <div className="gallery-grid">
           {galleryItems.map((item) => (
             <article className="gallery-card" key={item.title}>
-              <img src={item.image} alt={`${item.title} - ${item.label}`} />
+              <img src={item.image} alt={`${item.title} - ${item.label}`} loading="lazy" />
               <div>
                 <span>{item.label}</span>
                 <h3>{item.title}</h3>
