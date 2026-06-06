@@ -1603,6 +1603,10 @@ body:has(#contato:target) .site-nav a[href="#contato"]::after {
     display: flex;
   }
 
+  .header-sistema {
+    display: none;
+  }
+
   .brand {
     height: 64px;
     overflow: visible;
