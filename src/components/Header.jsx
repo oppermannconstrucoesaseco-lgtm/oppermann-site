@@ -8,6 +8,7 @@ const navItems = [
   ["Portfólio", "/portfolio"],
   ["Diferenciais", "#diferenciais"],
   ["Projetos", "/projetos"],
+  ["Estudo técnico", "/estudo-drywall-alvenaria"],
   ["Contato", "#contato"]
 ];
 
