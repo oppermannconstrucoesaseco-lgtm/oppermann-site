@@ -17,6 +17,8 @@ export function Footer() {
         <div>
           <span>Serviços principais</span>
           <p>{services.map((service) => service.title).join(" • ")}</p>
+          <span style={{ marginTop: "16px", display: "block" }}>Conteúdo técnico</span>
+          <p><a href="/estudo-drywall-alvenaria" style={{ color: "var(--color-gold)", textDecoration: "none" }}>Estudo Drywall × Alvenaria</a></p>
         </div>
         <div>
           <span>WhatsApp</span>
