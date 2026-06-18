@@ -83,9 +83,11 @@ export function Contact() {
               </option>
               <option>Steel Frame</option>
               <option>Drywall</option>
-              <option>Forros em drywall</option>
-              <option>Paredes em drywall</option>
+              <option>Forros em Drywall</option>
+              <option>Forro Modular</option>
+              <option>Paredes em Drywall</option>
               <option>Revestimentos</option>
+              <option>Piso Vinílico</option>
               <option>Pintura interna e externa</option>
             </select>
           </label>

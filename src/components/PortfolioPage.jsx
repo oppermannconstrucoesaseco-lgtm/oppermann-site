@@ -50,8 +50,8 @@ export function PortfolioPage() {
       <section id="portfolio-completo" className="section complete-portfolio" aria-labelledby="complete-portfolio-title">
         <div className="container">
           <div className="portfolio-page-heading complete-portfolio-heading">
-            <span>Novo portfólio completo</span>
-            <h2 id="complete-portfolio-title">Portfólio original Oppermann.</h2>
+            <span>Portfólio original</span>
+            <h2 id="complete-portfolio-title">Portfólio completo Oppermann</h2>
             <p>
               Apresentação completa com identidade visual, serviços, diferenciais, obras em destaque e contato.
             </p>
