@@ -4,7 +4,7 @@ const clients = [
   { name: "FG Empreendimentos", detail: "Balneário Camboriú" },
   { name: "Pasqualotto & GT", detail: "Balneário Camboriú" },
   { name: "AJ Realt", detail: "Balneário Camboriú" },
-  { name: "CNA Empreendimentos", detail: "Balneário Camboriú" }
+  { name: "CNA Empreendimentos", detail: "Itapema" }
 ];
 
 export function Clients() {
