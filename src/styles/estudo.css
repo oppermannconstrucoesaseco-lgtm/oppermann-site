@@ -1,0 +1,376 @@
+/* ========== Estudo Drywall × Alvenaria ========== */
+
+.estudo-page {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 80% 8%, rgba(228, 195, 122, 0.10), transparent 32%),
+    linear-gradient(180deg, #08080a 0%, #111115 40%, var(--color-bg) 100%);
+}
+
+/* Hero */
+.estudo-hero {
+  padding: 160px 0 96px;
+  position: relative;
+}
+
+.estudo-hero::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(228, 195, 122, 0.5), transparent);
+}
+
+.estudo-hero-inner {
+  max-width: 780px;
+}
+
+.estudo-hero-badge {
+  display: inline-block;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  background: rgba(201, 164, 92, 0.10);
+  border: 1px solid rgba(201, 164, 92, 0.25);
+  border-radius: 4px;
+  padding: 5px 12px;
+  margin-bottom: 24px;
+}
+
+.estudo-hero h1 {
+  font-size: clamp(2.4rem, 6vw, 4rem);
+  font-weight: 800;
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+  margin: 0 0 20px;
+  color: var(--color-text);
+}
+
+.estudo-hero-sub {
+  font-size: clamp(1rem, 1.8vw, 1.15rem);
+  color: var(--color-muted);
+  max-width: 640px;
+  margin: 0 0 12px;
+}
+
+.estudo-hero-modelo {
+  font-size: 0.88rem;
+  color: var(--color-gold);
+  margin: 0 0 36px;
+}
+
+.estudo-hero-actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+/* Section header */
+.estudo-section-header {
+  margin-bottom: 48px;
+}
+
+.estudo-eyebrow {
+  display: block;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  margin-bottom: 12px;
+}
+
+.estudo-section-header h2 {
+  font-size: clamp(1.5rem, 3.2vw, 2.1rem);
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: -0.015em;
+}
+
+/* Métricas */
+.estudo-metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.estudo-metric-card {
+  background: var(--color-panel);
+  border: 1px solid var(--color-line);
+  border-top: 2px solid var(--color-gold);
+  border-radius: var(--radius);
+  padding: 28px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.estudo-metric-card strong {
+  font-size: clamp(1.7rem, 3.5vw, 2.4rem);
+  font-weight: 800;
+  color: var(--color-gold-bright);
+  letter-spacing: -0.02em;
+  line-height: 1;
+}
+
+.estudo-metric-card span {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.estudo-metric-card p {
+  font-size: 0.82rem;
+  color: var(--color-muted);
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Comparativo */
+.estudo-compare-section {
+  background: var(--color-bg-soft);
+}
+
+.estudo-compare-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.estudo-compare-col {
+  background: var(--color-panel);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius);
+  padding: 32px 28px;
+}
+
+.estudo-compare-col h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0 0 20px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--color-line);
+}
+
+.estudo-compare-col--alv h3 {
+  color: var(--color-muted);
+}
+
+.estudo-compare-col--dry h3 {
+  color: var(--color-gold-bright);
+}
+
+.estudo-compare-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.estudo-compare-col ul li {
+  font-size: 0.9rem;
+  color: var(--color-muted);
+  padding-left: 18px;
+  position: relative;
+  line-height: 1.45;
+}
+
+.estudo-compare-col ul li::before {
+  content: "—";
+  position: absolute;
+  left: 0;
+  color: var(--color-line);
+}
+
+.estudo-compare-col--dry ul li::before {
+  color: var(--color-gold);
+  content: "✓";
+}
+
+.estudo-compare-col--dry ul li {
+  color: var(--color-text);
+}
+
+/* Especificação */
+.estudo-specs-table-wrap {
+  overflow-x: auto;
+  border-radius: var(--radius);
+  border: 1px solid var(--color-line);
+}
+
+.estudo-specs-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.estudo-specs-table th {
+  background: var(--color-panel-strong);
+  color: var(--color-gold);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-align: left;
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--color-line);
+}
+
+.estudo-specs-table td {
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--color-line);
+  color: var(--color-text);
+  vertical-align: top;
+}
+
+.estudo-specs-table tr:last-child td {
+  border-bottom: none;
+}
+
+.estudo-specs-table tr:nth-child(even) td {
+  background: rgba(255, 255, 255, 0.018);
+}
+
+.estudo-specs-note {
+  font-size: 0.78rem;
+  color: var(--color-muted);
+  margin: 20px 0 0;
+  line-height: 1.5;
+}
+
+/* Riscos */
+.estudo-risks-section {
+  background: var(--color-bg-soft);
+}
+
+.estudo-risks-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.estudo-risk-card {
+  background: var(--color-panel);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.estudo-risk-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.estudo-risk-badge {
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 3px;
+  white-space: nowrap;
+}
+
+.estudo-risk-badge--high {
+  background: rgba(220, 60, 60, 0.15);
+  color: #f07070;
+  border: 1px solid rgba(220, 60, 60, 0.3);
+}
+
+.estudo-risk-badge--mid {
+  background: rgba(220, 160, 40, 0.15);
+  color: #e0a840;
+  border: 1px solid rgba(220, 160, 40, 0.3);
+}
+
+.estudo-risk-header strong {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.estudo-risk-problem {
+  font-size: 0.85rem;
+  color: var(--color-muted);
+  margin: 0;
+  line-height: 1.45;
+}
+
+.estudo-risk-solution {
+  font-size: 0.85rem;
+  color: #7ecf85;
+  margin: 0;
+  line-height: 1.45;
+}
+
+/* CTA */
+.estudo-cta-section {
+  border-top: 1px solid var(--color-line);
+}
+
+.estudo-cta-inner {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.estudo-cta-inner h2 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: -0.015em;
+}
+
+.estudo-cta-inner p {
+  color: var(--color-muted);
+  font-size: 0.95rem;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.estudo-cta-actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+/* ========== Responsivo ========== */
+@media (max-width: 900px) {
+  .estudo-metrics-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .estudo-risks-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .estudo-hero {
+    padding: 120px 0 64px;
+  }
+
+  .estudo-metrics-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .estudo-compare-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .estudo-specs-table th,
+  .estudo-specs-table td {
+    padding: 12px 14px;
+    font-size: 0.82rem;
+  }
+}

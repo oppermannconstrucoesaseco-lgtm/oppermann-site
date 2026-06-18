@@ -3,8 +3,8 @@ import { SectionTitle } from "./SectionTitle.jsx";
 const clients = [
   { name: "FG Empreendimentos", detail: "Balneário Camboriú" },
   { name: "Pasqualotto & GT", detail: "Balneário Camboriú" },
-  { name: "AJ Realt", detail: "Itapema / BC" },
-  { name: "CNA Empreendimentos", detail: "Itapema / BC" }
+  { name: "AJ Realt", detail: "Balneário Camboriú" },
+  { name: "CNA Empreendimentos", detail: "Itapema" }
 ];
 
 export function Clients() {

@@ -4,8 +4,6 @@ import { getWhatsAppUrl } from "../utils/links.js";
 import "../styles/service-seo.css";
 import drywallImage from "../assets/servico-drywall.jpg";
 import steelFrameImage from "../assets/servico-steel-frame.jpg";
-import pinturaImage from "../assets/servico-pintura.jpg";
-import revestimentosImage from "../assets/servico-revestimentos.jpg";
 import forroModularImage from "../assets/obra-forro-modular-01.jpg";
 import pisoViniloImage from "../assets/obra-piso-vinilico-01.jpg";
 
@@ -370,7 +368,7 @@ const servicePages = {
       "Compatibilização entre estrutura, elétrica, hidráulica e ar-condicionado",
       "Pranchas técnicas detalhadas para execução em campo",
       "Vista isométrica explodida para visualização 3D da estrutura",
-      "Atendimento em Itapema, Bombinhas, Balneário Camboriú, Porto Belo e região"
+      "Atendimento em Itapema, Balneário Camboriú, Porto Belo, Bombinhas, Itajaí e Navegantes"
     ],
     services: [
       "Projeto de Steel Frame",
@@ -381,7 +379,6 @@ const servicePages = {
       "Memorial de cálculo"
     ],
     gallery: [
-      { src: projEstCapa,  alt: "Projeto Estrutural Steel Frame — residência unifamiliar, capa do projeto" },
       { src: projEstA02,   alt: "Prancha A02 — Planta de Locação de Vigas, ESC 1/40" },
       { src: projEstA03,   alt: "Prancha A03 — Planta de Locação de Laje, ESC 1/40" },
       { src: projEstA04,   alt: "Prancha A04 — Planta de Locação de Escada com isométricas" },

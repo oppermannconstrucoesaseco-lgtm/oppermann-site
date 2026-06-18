@@ -16,12 +16,14 @@ import { PortfolioPage } from "./components/PortfolioPage.jsx";
 import { ContactPage } from "./components/ContactPage.jsx";
 import { ProjetosPage } from "./components/ProjetosPage.jsx";
 import { ServiceSeoPage, getServicePage } from "./components/ServiceSeoPage.jsx";
+import { EstudoPage } from "./components/EstudoPage.jsx";
 
 export default function App() {
   const pathname = window.location.pathname.replace(/\/$/, "") || "/";
   const isPortfolioPage = pathname === "/portfolio";
   const isContactPage = pathname === "/contato";
   const isProjetosPage = pathname === "/projetos";
+  const isEstudoPage = pathname === "/estudo-drywall-alvenaria";
   const servicePage = getServicePage(pathname);
 
   return (
@@ -34,6 +36,8 @@ export default function App() {
         <ContactPage />
       ) : isProjetosPage ? (
         <ProjetosPage />
+      ) : isEstudoPage ? (
+        <EstudoPage />
       ) : servicePage ? (
         <ServiceSeoPage page={servicePage} />
       ) : (

@@ -50,7 +50,7 @@ export function Faq() {
   return (
     <section className="section faq-section">
       <div className="container">
-        <SectionTitle eyebrow="Dúvidas frequentes" title="Perguntas frequentes" align="center">
+        <SectionTitle eyebrow="FAQ" title="Perguntas frequentes" align="center">
           Respostas rápidas para as dúvidas mais comuns sobre nossos serviços.
         </SectionTitle>
         <div className="faq-list">
