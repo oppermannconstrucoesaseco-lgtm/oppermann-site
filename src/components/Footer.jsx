@@ -23,6 +23,12 @@ export function Footer() {
         <div>
           <span>WhatsApp</span>
           <p>{company.phoneDisplay}</p>
+          <span style={{ marginTop: "16px", display: "block" }}>Legal</span>
+          <p style={{ display: "flex", flexDirection: "column", gap: "4px" }}>
+            <a href="/politica-de-privacidade" style={{ color: "var(--color-muted)", textDecoration: "none", fontSize: "0.85rem" }}>Política de Privacidade</a>
+            <a href="/termos-de-servico" style={{ color: "var(--color-muted)", textDecoration: "none", fontSize: "0.85rem" }}>Termos de Serviço</a>
+            <a href="/exclusao-de-dados" style={{ color: "var(--color-muted)", textDecoration: "none", fontSize: "0.85rem" }}>Exclusão de Dados</a>
+          </p>
         </div>
       </div>
     </footer>
