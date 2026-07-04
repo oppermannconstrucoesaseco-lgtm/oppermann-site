@@ -18,6 +18,7 @@ import { ProjetosPage } from "./components/ProjetosPage.jsx";
 import { ServiceSeoPage, getServicePage } from "./components/ServiceSeoPage.jsx";
 import { EstudoPage } from "./components/EstudoPage.jsx";
 import { LegalPage, getLegalPage } from "./components/LegalPage.jsx";
+import { ObrigadoPage } from "./components/ObrigadoPage.jsx";
 
 export default function App() {
   const pathname = window.location.pathname.replace(/\/$/, "") || "/";
@@ -25,6 +26,7 @@ export default function App() {
   const isContactPage = pathname === "/contato";
   const isProjetosPage = pathname === "/projetos";
   const isEstudoPage = pathname === "/estudo-drywall-alvenaria";
+  const isObrigadoPage = pathname === "/obrigado";
   const legalPage = getLegalPage(pathname);
   const servicePage = getServicePage(pathname);
 
@@ -32,7 +34,9 @@ export default function App() {
     <>
       {/* Estrutura principal da landing page institucional. */}
       <Header />
-      {isPortfolioPage ? (
+      {isObrigadoPage ? (
+        <ObrigadoPage />
+      ) : isPortfolioPage ? (
         <PortfolioPage />
       ) : isContactPage ? (
         <ContactPage />
