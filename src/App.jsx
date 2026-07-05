@@ -19,6 +19,7 @@ import { ServiceSeoPage, getServicePage } from "./components/ServiceSeoPage.jsx"
 import { EstudoPage } from "./components/EstudoPage.jsx";
 import { LegalPage, getLegalPage } from "./components/LegalPage.jsx";
 import { ObrigadoPage } from "./components/ObrigadoPage.jsx";
+import { NotFoundPage } from "./components/NotFoundPage.jsx";
 
 export default function App() {
   const pathname = window.location.pathname.replace(/\/$/, "") || "/";
@@ -48,7 +49,7 @@ export default function App() {
         <LegalPage pathname={legalPage} />
       ) : servicePage ? (
         <ServiceSeoPage page={servicePage} />
-      ) : (
+      ) : pathname === "/" ? (
         <main>
           <Hero />
           <About />
@@ -62,6 +63,8 @@ export default function App() {
           <Faq />
           <Contact />
         </main>
+      ) : (
+        <NotFoundPage />
       )}
       <Footer />
       <WhatsAppButton />

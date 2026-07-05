@@ -171,8 +171,8 @@ export function ProjetosPage() {
 
       {/* Lightbox */}
       {lightbox && (
-        <div className="projetos-lightbox" onClick={() => setLightbox(null)}>
-          <img src={lightbox.src} alt={lightbox.alt} />
+        <div className="projetos-lightbox" role="dialog" aria-modal="true" aria-label="Imagem ampliada" onClick={() => setLightbox(null)}>
+          <img src={lightbox.src} alt={lightbox.alt} onClick={(e) => e.stopPropagation()} />
         </div>
       )}
     </main>
