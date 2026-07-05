@@ -36,7 +36,7 @@ const faqs = [
   {
     question: "Os serviços têm garantia?",
     answer:
-      "Sim. Todos os nossos serviços são executados seguindo as normas técnicas vigentes e contam com garantia de execução. Qualquer problema relacionado à mão de obra dentro do período de garantia é resolvido sem custo adicional."
+      "Sim. Todos os nossos serviços são executados seguindo as normas técnicas vigentes e contam com 1 ano de garantia de execução. Qualquer problema relacionado à mão de obra dentro desse período é resolvido sem custo adicional."
   }
 ];
 
