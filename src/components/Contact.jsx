@@ -59,7 +59,7 @@ export function Contact() {
             <a className="btn btn-primary" href={getWhatsAppUrl()} target="_blank" rel="noreferrer">
               Falar com nosso consultor
             </a>
-            <a className="btn btn-ghost" href={getMailToUrl()}>
+            <a className="btn btn-ghost" href={getMailToUrl()} target="_blank" rel="noreferrer">
               Enviar e-mail
             </a>
           </div>
