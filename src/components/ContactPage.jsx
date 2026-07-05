@@ -122,7 +122,7 @@ export function ContactPage() {
               Mensagem
               <textarea name="mensagem" rows="5" placeholder="Conte um pouco sobre sua obra" required />
             </label>
-            {formMessage && <p className="form-feedback">{formMessage}</p>}
+            {formMessage && <p className="form-feedback" role="alert" aria-live="polite">{formMessage}</p>}
             <button className="btn btn-primary" type="submit">
               Solicitar orçamento
             </button>

@@ -54,36 +54,40 @@ export function Faq() {
           Respostas rápidas para as dúvidas mais comuns sobre nossos serviços.
         </SectionTitle>
         <div className="faq-list">
-          {faqs.map((item, index) => (
-            <div key={index} className={`faq-item${open === index ? " faq-item--open" : ""}`}>
-              <button
-                className="faq-question"
-                onClick={() => toggle(index)}
-                aria-expanded={open === index}
-              >
-                <span>{item.question}</span>
-                <svg
-                  className="faq-icon"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  aria-hidden="true"
+          {faqs.map((item, index) => {
+            const panelId = `faq-panel-${index}`;
+            return (
+              <div key={item.question} className={`faq-item${open === index ? " faq-item--open" : ""}`}>
+                <button
+                  className="faq-question"
+                  onClick={() => toggle(index)}
+                  aria-expanded={open === index}
+                  aria-controls={panelId}
                 >
-                  <polyline points="6 9 12 15 18 9" />
-                </svg>
-              </button>
-              {open === index && (
-                <div className="faq-answer">
-                  <p>{item.answer}</p>
-                </div>
-              )}
-            </div>
-          ))}
+                  <span>{item.question}</span>
+                  <svg
+                    className="faq-icon"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    aria-hidden="true"
+                  >
+                    <polyline points="6 9 12 15 18 9" />
+                  </svg>
+                </button>
+                {open === index && (
+                  <div id={panelId} className="faq-answer" role="region" aria-label={item.question}>
+                    <p>{item.answer}</p>
+                  </div>
+                )}
+              </div>
+            );
+          })}
         </div>
         <div className="faq-cta">
           <p>Ainda tem dúvidas? Fale diretamente com nossa equipe.</p>

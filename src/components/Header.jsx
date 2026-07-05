@@ -17,7 +17,7 @@ export function Header() {
   const pathname = window.location.pathname.replace(/\/$/, "");
   const isPortfolioPage = pathname === "/portfolio";
   const isProjetosPage = pathname === "/projetos";
-  const isSubPage = isPortfolioPage || isProjetosPage;
+  const isSubPage = pathname !== "" && pathname !== "/";
 
   // Fecha o menu ao pressionar ESC
   useEffect(() => {
@@ -67,6 +67,7 @@ export function Header() {
             onClick={() => setMenuOpen((v) => !v)}
             aria-label={menuOpen ? "Fechar menu" : "Abrir menu"}
             aria-expanded={menuOpen}
+            aria-controls="mobile-menu-nav"
           >
             <span />
             <span />
@@ -93,7 +94,7 @@ export function Header() {
           {/* Overlay para fechar clicando fora */}
           <div className="mobile-menu-overlay" onClick={() => setMenuOpen(false)} />
 
-          <nav className="mobile-menu-panel" aria-label="Navegação mobile">
+          <nav id="mobile-menu-nav" className="mobile-menu-panel" aria-label="Navegação mobile">
             <div className="mobile-menu-header">
               <img src={logoOppermann} alt="OPPERMANN" className="mobile-menu-logo" />
               <button
