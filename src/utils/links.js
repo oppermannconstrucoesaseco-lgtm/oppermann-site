@@ -5,7 +5,6 @@ export function getWhatsAppUrl(message = whatsappMessage) {
 }
 
 export function getMailToUrl() {
-  const to = encodeURIComponent(company.email);
   const subject = encodeURIComponent("Solicitação de orçamento");
-  return `https://mail.google.com/mail/?view=cm&to=${to}&su=${subject}`;
+  return `https://mail.google.com/mail/?view=cm&fs=1&to=${company.email}&su=${subject}`;
 }
