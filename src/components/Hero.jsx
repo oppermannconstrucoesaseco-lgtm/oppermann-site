@@ -1,5 +1,5 @@
 import heroImage from "../assets/hero-oppermann.jpg";
-import logoOppermann from "../assets/logo-oppermann.png";
+import falkMascote from "../assets/falk-mascote-transparente.png";
 import { company } from "../data/siteContent.js";
 import { getWhatsAppUrl } from "../utils/links.js";
 
@@ -7,7 +7,7 @@ export function Hero() {
   return (
     <section id="home" className="hero" style={{ backgroundImage: `url(${heroImage})` }}>
       <div className="hero-overlay" />
-      <img className="hero-watermark" src={logoOppermann} alt="" aria-hidden="true" />
+      <img className="hero-falk" src={falkMascote} alt="Falk, mascote da Oppermann" />
       <div className="hero-content">
         <p className="hero-kicker">Construção a seco de alto padrão</p>
         <h1>A nova era da construção começa aqui</h1>
