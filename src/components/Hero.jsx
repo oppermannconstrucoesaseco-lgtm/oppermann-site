@@ -1,5 +1,5 @@
 import heroImage from "../assets/hero-oppermann.jpg";
-import falkMascote from "../assets/falk-mascote-transparente.png";
+import falkMascote from "../assets/falk-mascote-site.png";
 import { company } from "../data/siteContent.js";
 import { getWhatsAppUrl } from "../utils/links.js";
 
