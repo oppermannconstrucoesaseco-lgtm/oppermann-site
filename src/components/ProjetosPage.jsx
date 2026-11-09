@@ -2,6 +2,13 @@ import { useEffect, useState } from "react";
 import { getWhatsAppUrl } from "../utils/links.js";
 import "../styles/projetos.css";
 
+import gtHomeLogo from "../assets/projetos/gt-home/gt-home-logo-sm.png";
+import gtHomeFachada from "../assets/projetos/gt-home/gt-home-fachada.jpg";
+import gtHomeForro01 from "../assets/projetos/gt-home/gt-home-forro-01.jpg";
+import gtHomeForro02 from "../assets/projetos/gt-home/gt-home-forro-02.jpg";
+import gtHomeDrywall01 from "../assets/projetos/gt-home/gt-home-drywall-01.jpg";
+import gtHomeDrywall02 from "../assets/projetos/gt-home/gt-home-drywall-02.jpg";
+
 import allWertLaje01 from "../assets/projetos/all-wert/all-wert-laje-01.jpg";
 import allWertLaje02 from "../assets/projetos/all-wert/all-wert-laje-02.jpg";
 import allWertObraNoite from "../assets/projetos/all-wert/all-wert-obra-noite-web.jpg";
@@ -41,15 +48,27 @@ const projetos = [
     ],
     whatsappMsg: "Olá! Vi o projeto ALL WERT no site da Oppermann e gostaria de saber mais sobre os serviços.",
   },
+  {
+    id: "gt-home",
+    cliente: "GT Home",
+    logo: gtHomeLogo,
+    titulo: "Residencial — Torre La Citta",
+    localizacao: "Balneário Camboriú / SC",
+    area: null,
+    tipo: "Residencial",
+    servicos: "Forros em Drywall",
+    status: "Em execução",
+    fotos: [
+      { src: gtHomeFachada, alt: "Torre residencial La Citta em Balneário Camboriú — GT Home" },
+      { src: gtHomeForro01, alt: "Estrutura de forro drywall com instalações — GT Home La Citta" },
+      { src: gtHomeForro02, alt: "Forro drywall com tubulações integradas — GT Home La Citta" },
+      { src: gtHomeDrywall01, alt: "Forro drywall concluído com vista privilegiada de Balneário Camboriú" },
+      { src: gtHomeDrywall02, alt: "Forro drywall em apartamento alto padrão — GT Home La Citta BC" },
+    ],
+    tecnico: [],
+    whatsappMsg: "Olá! Vi o projeto GT Home no site da Oppermann e gostaria de saber mais sobre os serviços de forro drywall.",
+  },
 ];
-
-const projetoEmBreve = {
-  cliente: "GT Home",
-  titulo: "Residência",
-  localizacao: "Balneário Camboriú / SC",
-  servicos: "Drywall · Pintura",
-  status: "Em execução",
-};
 
 export function ProjetosPage() {
   const [lightbox, setLightbox] = useState(null);
@@ -112,10 +131,12 @@ export function ProjetosPage() {
 
             {/* Specs */}
             <div className="projeto-specs">
-              <div className="projeto-spec-item">
-                <span className="projeto-spec-label">Área Total</span>
-                <span className="projeto-spec-valor gold">{projeto.area}</span>
-              </div>
+              {projeto.area && (
+                <div className="projeto-spec-item">
+                  <span className="projeto-spec-label">Área Total</span>
+                  <span className="projeto-spec-valor gold">{projeto.area}</span>
+                </div>
+              )}
               <div className="projeto-spec-item">
                 <span className="projeto-spec-label">Tipo</span>
                 <span className="projeto-spec-valor">{projeto.tipo}</span>
@@ -186,40 +207,6 @@ export function ProjetosPage() {
             </div>
           </div>
         ))}
-
-        {/* GT Home — card em breve */}
-        <div className="projeto-card projeto-card-breve">
-          <div className="projeto-card-header">
-            <div className="projeto-card-titulo">
-              <div>
-                <h2>{projetoEmBreve.cliente} — {projetoEmBreve.titulo}</h2>
-                <p>
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                    <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
-                  </svg>
-                  {projetoEmBreve.localizacao}
-                </p>
-              </div>
-            </div>
-            <span className="projeto-badge em-execucao">Em execução</span>
-          </div>
-          <div className="projeto-specs">
-            <div className="projeto-spec-item">
-              <span className="projeto-spec-label">Tipo</span>
-              <span className="projeto-spec-valor">Residencial</span>
-            </div>
-            <div className="projeto-spec-item">
-              <span className="projeto-spec-label">Serviços</span>
-              <span className="projeto-spec-valor">{projetoEmBreve.servicos}</span>
-            </div>
-          </div>
-          <div className="projeto-breve-aviso">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/>
-            </svg>
-            <span>Fotos e atualizações em breve</span>
-          </div>
-        </div>
 
       </section>
 
