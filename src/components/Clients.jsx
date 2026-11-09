@@ -1,6 +1,8 @@
 import { SectionTitle } from "./SectionTitle.jsx";
 
 const clients = [
+  { name: "ALL WERT", detail: "Porto Belo" },
+  { name: "GT Home", detail: "Balneário Camboriú" },
   { name: "FG Empreendimentos", detail: "Balneário Camboriú" },
   { name: "Pasqualotto & GT", detail: "Balneário Camboriú" },
   { name: "AJ Realt", detail: "Balneário Camboriú" },
