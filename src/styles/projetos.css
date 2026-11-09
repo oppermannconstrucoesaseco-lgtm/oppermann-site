@@ -137,6 +137,18 @@
   animation: pulsar 1.8s ease-in-out infinite;
 }
 
+.projeto-badge.concluida {
+  background: rgba(148, 163, 184, 0.12);
+  border: 1px solid rgba(148, 163, 184, 0.3);
+  color: #94a3b8;
+}
+
+.projeto-badge.concluida::before {
+  content: "✓";
+  font-size: 0.7rem;
+  line-height: 1;
+}
+
 @keyframes pulsar {
   0%, 100% { opacity: 1; transform: scale(1); }
   50% { opacity: 0.5; transform: scale(0.75); }

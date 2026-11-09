@@ -2,6 +2,15 @@ import { useEffect, useState } from "react";
 import { getWhatsAppUrl } from "../utils/links.js";
 import "../styles/projetos.css";
 
+import bombinhasCoberturaMetal from "../assets/projetos/bombinhas-cobertura/bombinhas-cobertura-metal.jpg";
+import bombinhasEstr01 from "../assets/projetos/bombinhas-cobertura/bombinhas-estrutura-01.jpg";
+import bombinhasEstr02 from "../assets/projetos/bombinhas-cobertura/bombinhas-estrutura-02.jpg";
+import bombinhasEstr03 from "../assets/projetos/bombinhas-cobertura/bombinhas-estrutura-03.jpg";
+import bombinhasForro01 from "../assets/projetos/bombinhas-cobertura/bombinhas-forro-drywall-01.jpg";
+import bombinhasForro02 from "../assets/projetos/bombinhas-cobertura/bombinhas-forro-drywall-02.jpg";
+import bombinhasObra01 from "../assets/projetos/bombinhas-cobertura/bombinhas-obra-01.jpg";
+import bombinhasObraNoite from "../assets/projetos/bombinhas-cobertura/bombinhas-obra-noite.jpg";
+
 import gtHomeLogo from "../assets/projetos/gt-home/gt-home-logo-sm.png";
 import gtHomeFachada from "../assets/projetos/gt-home/gt-home-fachada.jpg";
 import gtHomeForro01 from "../assets/projetos/gt-home/gt-home-forro-01.jpg";
@@ -68,6 +77,29 @@ const projetos = [
     tecnico: [],
     whatsappMsg: "Olá! Vi o projeto GT Home no site da Oppermann e gostaria de saber mais sobre os serviços de forro drywall.",
   },
+  {
+    id: "bombinhas-cobertura",
+    cliente: null,
+    logo: null,
+    titulo: "Laje Coberta Residencial",
+    localizacao: "Bombinhas / SC",
+    area: null,
+    tipo: "Residencial",
+    servicos: "Steel Frame · Laje Coberta · Drywall Externo (Glasroc)",
+    status: "Concluída",
+    fotos: [
+      { src: bombinhasCoberturaMetal, alt: "Cobertura metálica concluída com vista para o mar — Bombinhas/SC" },
+      { src: bombinhasEstr02, alt: "Estrutura steel frame da laje coberta com vista para o mar e coqueiros — Bombinhas" },
+      { src: bombinhasEstr03, alt: "Treliças em steel frame da cobertura — Bombinhas/SC" },
+      { src: bombinhasEstr01, alt: "Estrutura de steel frame da cobertura com isolamento termoacústico" },
+      { src: bombinhasObra01, alt: "Vista externa da obra — laje coberta com Glasroc em Bombinhas" },
+      { src: bombinhasObraNoite, alt: "Avance da obra ao entardecer — laje coberta Bombinhas" },
+      { src: bombinhasForro01, alt: "Forro drywall externo com chapa Glasroc — Bombinhas/SC" },
+      { src: bombinhasForro02, alt: "Aplicação de forro drywall externo na cobertura — Bombinhas" },
+    ],
+    tecnico: [],
+    whatsappMsg: "Olá! Vi o projeto de laje coberta em Bombinhas no site da Oppermann e gostaria de saber mais.",
+  },
 ];
 
 export function ProjetosPage() {
@@ -117,7 +149,7 @@ export function ProjetosPage() {
                   />
                 )}
                 <div>
-                  <h2>{projeto.cliente} — {projeto.titulo}</h2>
+                  <h2>{projeto.cliente ? `${projeto.cliente} — ` : ""}{projeto.titulo}</h2>
                   <p>
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                       <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
@@ -126,7 +158,9 @@ export function ProjetosPage() {
                   </p>
                 </div>
               </div>
-              <span className="projeto-badge em-execucao">Em execução</span>
+              <span className={`projeto-badge ${projeto.status === "Concluída" ? "concluida" : "em-execucao"}`}>
+              {projeto.status}
+            </span>
             </div>
 
             {/* Specs */}
