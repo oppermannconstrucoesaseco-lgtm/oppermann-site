@@ -17,6 +17,8 @@ import { ContactPage } from "./components/ContactPage.jsx";
 import { ProjetosPage } from "./components/ProjetosPage.jsx";
 import { ServiceSeoPage, getServicePage } from "./components/ServiceSeoPage.jsx";
 import { EstudoPage } from "./components/EstudoPage.jsx";
+import { ChalesAframePage } from "./components/ChalesAframePage.jsx";
+import { TrabalhePage } from "./components/TrabalhePage.jsx";
 import { LegalPage, getLegalPage } from "./components/LegalPage.jsx";
 import { ObrigadoPage } from "./components/ObrigadoPage.jsx";
 import { NotFoundPage } from "./components/NotFoundPage.jsx";
@@ -27,6 +29,8 @@ export default function App() {
   const isContactPage = pathname === "/contato";
   const isProjetosPage = pathname === "/projetos";
   const isEstudoPage = pathname === "/estudo-drywall-alvenaria";
+  const isChalesPage = pathname === "/chales-a-frame";
+  const isTrabalhe = pathname === "/trabalhe-conosco";
   const isObrigadoPage = pathname === "/obrigado";
   const legalPage = getLegalPage(pathname);
   const servicePage = getServicePage(pathname);
@@ -45,6 +49,10 @@ export default function App() {
         <ProjetosPage />
       ) : isEstudoPage ? (
         <EstudoPage />
+      ) : isChalesPage ? (
+        <ChalesAframePage />
+      ) : isTrabalhe ? (
+        <TrabalhePage />
       ) : legalPage ? (
         <LegalPage pathname={legalPage} />
       ) : servicePage ? (
