@@ -8,6 +8,7 @@ const navItems = [
   ["Portfólio", "/portfolio"],
   ["Diferenciais", "#diferenciais"],
   ["Projetos", "/projetos"],
+  ["Chalés A-Frame", "/chales-a-frame"],
   ["Estudo técnico", "/estudo-drywall-alvenaria"],
   ["Contato", "#contato"]
 ];
@@ -17,6 +18,7 @@ export function Header() {
   const pathname = window.location.pathname.replace(/\/$/, "");
   const isPortfolioPage = pathname === "/portfolio";
   const isProjetosPage = pathname === "/projetos";
+  const isChalesPage = pathname === "/chales-a-frame";
   const isSubPage = pathname !== "" && pathname !== "/";
 
   // Fecha o menu ao pressionar ESC
@@ -48,7 +50,8 @@ export function Header() {
             <a
               aria-current={
                 (isPortfolioPage && href === "/portfolio") ||
-                (isProjetosPage && href === "/projetos")
+                (isProjetosPage && href === "/projetos") ||
+                (isChalesPage && href === "/chales-a-frame")
                   ? "page"
                   : undefined
               }
@@ -116,7 +119,8 @@ export function Header() {
                     href={resolveHref(href)}
                     aria-current={
                       (isPortfolioPage && href === "/portfolio") ||
-                      (isProjetosPage && href === "/projetos")
+                      (isProjetosPage && href === "/projetos") ||
+                      (isChalesPage && href === "/chales-a-frame")
                         ? "page"
                         : undefined
                     }
